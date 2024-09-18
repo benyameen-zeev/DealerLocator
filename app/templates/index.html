@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Map</title>
+    <style>
+        /* Basic reset */
+        body, h1, form {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Flexbox layout for centering content */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header styling */
+        h1 {
+            padding: 10px;
+            font-size: 24px; /* Smaller title */
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Form container for centering the search bar */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+            input[type="text"]:focus {
+                border-color: #007BFF; /* Change border color on focus */
+                outline: none;
+            }
+
+        /* Button styling */
+        button, .edit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+            button:hover, .edit-button:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+
+        .edit-button {
+            background-color: #28a745; /* Green background for the edit button */
+        }
+
+            .edit-button:hover {
+                background-color: #218838; /* Darker green on hover */
+            }
+
+        /* Container for the map */
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marco Map</h1>
+    <div class="form-container">
+        <form method="POST" action="/" style="display: flex;">
+            <input type="text" id="city" name="city" placeholder="Enter City Name" required>
+            <button type="submit">Search</button>
+        </form>
+        <a href="/edit" class="edit-button">Edit Dealers</a>
+    </div>
+
+    <iframe src="/dealers_map.html"></iframe>
+</body>
+</html>

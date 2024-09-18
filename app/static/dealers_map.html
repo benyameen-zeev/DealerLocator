@@ -1,0 +1,3123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38f479546713a98f029cc055ca53400a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38f479546713a98f029cc055ca53400a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38f479546713a98f029cc055ca53400a = L.map(
+                "map_38f479546713a98f029cc055ca53400a",
+                {
+                    center: [38.4496, -78.8689],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2cae39a1eca88101cb4fa68c63b2c686 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2cae39a1eca88101cb4fa68c63b2c686.addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var marker_10b97d28eeea0239eca29093cbbcac6c = L.marker(
+                [36.98630351405106, -79.91670830465432],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_7e4951b23dbba4be3c2f074a8aed1905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_10b97d28eeea0239eca29093cbbcac6c.setIcon(icon_7e4951b23dbba4be3c2f074a8aed1905);
+        
+    
+        var popup_5b27bb6e310f88aaf71161012798ee8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5194fbf11145ef19d630514231924da4 = $(`<div id="html_5194fbf11145ef19d630514231924da4" style="width: 100.0%; height: 100.0%;">40WestBuildingSupply (Rocky Mount)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_5b27bb6e310f88aaf71161012798ee8a.setContent(html_5194fbf11145ef19d630514231924da4);
+            
+        
+
+        marker_10b97d28eeea0239eca29093cbbcac6c.bindPopup(popup_5b27bb6e310f88aaf71161012798ee8a)
+        ;
+
+        
+    
+    
+            var marker_d107b18be70b9511f7062ebf9433eec2 = L.marker(
+                [39.52742960359185, -76.18263049242314],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_47ce846822a23f4c3125e400eb633874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d107b18be70b9511f7062ebf9433eec2.setIcon(icon_47ce846822a23f4c3125e400eb633874);
+        
+    
+        var popup_61d13cc595bf9128f152e142abfd2eff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d4ab053c7cffb29a71454efb924fd6d = $(`<div id="html_7d4ab053c7cffb29a71454efb924fd6d" style="width: 100.0%; height: 100.0%;">84Lumber (Aberdeen)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_61d13cc595bf9128f152e142abfd2eff.setContent(html_7d4ab053c7cffb29a71454efb924fd6d);
+            
+        
+
+        marker_d107b18be70b9511f7062ebf9433eec2.bindPopup(popup_61d13cc595bf9128f152e142abfd2eff)
+        ;
+
+        
+    
+    
+            var marker_0b8a06f9f7896606d6c43d1fc5b95fd4 = L.marker(
+                [39.01586236281597, -76.49106554985725],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_e0ab1d005fb0226645c132cfe19724e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b8a06f9f7896606d6c43d1fc5b95fd4.setIcon(icon_e0ab1d005fb0226645c132cfe19724e9);
+        
+    
+        var popup_b0eacf6aff399511a94a88e92459259f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea187340b48e86ad31bd959c6df7e004 = $(`<div id="html_ea187340b48e86ad31bd959c6df7e004" style="width: 100.0%; height: 100.0%;">84Lumber (Annapolis)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_b0eacf6aff399511a94a88e92459259f.setContent(html_ea187340b48e86ad31bd959c6df7e004);
+            
+        
+
+        marker_0b8a06f9f7896606d6c43d1fc5b95fd4.bindPopup(popup_b0eacf6aff399511a94a88e92459259f)
+        ;
+
+        
+    
+    
+            var marker_fcd26ff61b2d306e153f9a2fb5f6c151 = L.marker(
+                [39.50853476604425, -76.3835184400691],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_ebf99d2e8e4c8832568173c82a2ceb5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fcd26ff61b2d306e153f9a2fb5f6c151.setIcon(icon_ebf99d2e8e4c8832568173c82a2ceb5d);
+        
+    
+        var popup_f1e9c11a3dbe834a41beb21d025c9274 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_498d8bd2a306bcfa5ec04ef298f8fd3b = $(`<div id="html_498d8bd2a306bcfa5ec04ef298f8fd3b" style="width: 100.0%; height: 100.0%;">84Lumber (BelAir)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_f1e9c11a3dbe834a41beb21d025c9274.setContent(html_498d8bd2a306bcfa5ec04ef298f8fd3b);
+            
+        
+
+        marker_fcd26ff61b2d306e153f9a2fb5f6c151.bindPopup(popup_f1e9c11a3dbe834a41beb21d025c9274)
+        ;
+
+        
+    
+    
+            var marker_bf031fc6fc7160cb91786dc51cf76229 = L.marker(
+                [39.31512939084693, -77.6387796676683],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_0a161ab4ab05a51bb5e88d9b7124902b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf031fc6fc7160cb91786dc51cf76229.setIcon(icon_0a161ab4ab05a51bb5e88d9b7124902b);
+        
+    
+        var popup_ba973f1c72b85572d6c3f43f415ce8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_601896d937bd93edec8116ccd2a60495 = $(`<div id="html_601896d937bd93edec8116ccd2a60495" style="width: 100.0%; height: 100.0%;">84Lumber (Brunswick)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_ba973f1c72b85572d6c3f43f415ce8f4.setContent(html_601896d937bd93edec8116ccd2a60495);
+            
+        
+
+        marker_bf031fc6fc7160cb91786dc51cf76229.bindPopup(popup_ba973f1c72b85572d6c3f43f415ce8f4)
+        ;
+
+        
+    
+    
+            var marker_c13c5ea324b754b5fa9980ba42d2fde3 = L.marker(
+                [38.13387454568898, -78.43276846615922],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_a677813b76cb65a7f48aa35899aa775e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c13c5ea324b754b5fa9980ba42d2fde3.setIcon(icon_a677813b76cb65a7f48aa35899aa775e);
+        
+    
+        var popup_6befd298cd352df271aa96ff1da5e755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1784b86559bd735869fbb4aee284e51b = $(`<div id="html_1784b86559bd735869fbb4aee284e51b" style="width: 100.0%; height: 100.0%;">84Lumber (Charlottesville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_6befd298cd352df271aa96ff1da5e755.setContent(html_1784b86559bd735869fbb4aee284e51b);
+            
+        
+
+        marker_c13c5ea324b754b5fa9980ba42d2fde3.bindPopup(popup_6befd298cd352df271aa96ff1da5e755)
+        ;
+
+        
+    
+    
+            var marker_80310fb1469c7700d43eec1bcdb54ff9 = L.marker(
+                [37.1353508157859, -80.36605241173966],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_ed321e1e8100012449f79bf9a1e238cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_80310fb1469c7700d43eec1bcdb54ff9.setIcon(icon_ed321e1e8100012449f79bf9a1e238cf);
+        
+    
+        var popup_8876c7c79fa39a408fc652d5be3e2140 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c80cdef73c2c61dc7690a5c87f37d6df = $(`<div id="html_c80cdef73c2c61dc7690a5c87f37d6df" style="width: 100.0%; height: 100.0%;">84Lumber (Christiansburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_8876c7c79fa39a408fc652d5be3e2140.setContent(html_c80cdef73c2c61dc7690a5c87f37d6df);
+            
+        
+
+        marker_80310fb1469c7700d43eec1bcdb54ff9.bindPopup(popup_8876c7c79fa39a408fc652d5be3e2140)
+        ;
+
+        
+    
+    
+            var marker_75477c465c53b9504c053ade31533d37 = L.marker(
+                [38.44594124136267, -77.98683116582774],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_2892ecd13cce2c2a4486f705bd0b703a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_75477c465c53b9504c053ade31533d37.setIcon(icon_2892ecd13cce2c2a4486f705bd0b703a);
+        
+    
+        var popup_0acad882e9c25351d23b59dacbed9392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ded35efe5661a120ffc15d80a4a1ce70 = $(`<div id="html_ded35efe5661a120ffc15d80a4a1ce70" style="width: 100.0%; height: 100.0%;">84Lumber (Culpepper)<br>Shipping Days: Mon/Thurs</div>`)[0];
+                popup_0acad882e9c25351d23b59dacbed9392.setContent(html_ded35efe5661a120ffc15d80a4a1ce70);
+            
+        
+
+        marker_75477c465c53b9504c053ade31533d37.bindPopup(popup_0acad882e9c25351d23b59dacbed9392)
+        ;
+
+        
+    
+    
+            var marker_48b334c69ca16fa8c83293b0000f574b = L.marker(
+                [39.17094170539809, -76.53354316248966],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_ccc479128fc89ee0ec8668ea0bbb1ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48b334c69ca16fa8c83293b0000f574b.setIcon(icon_ccc479128fc89ee0ec8668ea0bbb1ecb);
+        
+    
+        var popup_8fecabf080dfd5574504e6655796d2ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff402eee25d928acde449ca91d0eb6fb = $(`<div id="html_ff402eee25d928acde449ca91d0eb6fb" style="width: 100.0%; height: 100.0%;">84Lumber (CurtisBay)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_8fecabf080dfd5574504e6655796d2ed.setContent(html_ff402eee25d928acde449ca91d0eb6fb);
+            
+        
+
+        marker_48b334c69ca16fa8c83293b0000f574b.bindPopup(popup_8fecabf080dfd5574504e6655796d2ed)
+        ;
+
+        
+    
+    
+            var marker_aa55b262b9e370ac97b6271981f4f4d0 = L.marker(
+                [38.88877024924859, -79.84488377163805],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_9a5d573f4627a7302b7fcf994a888731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_aa55b262b9e370ac97b6271981f4f4d0.setIcon(icon_9a5d573f4627a7302b7fcf994a888731);
+        
+    
+        var popup_a7a1937c2eb6004a6656d60d2c2a1899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdb211f5608538f49262bf00b9522e24 = $(`<div id="html_fdb211f5608538f49262bf00b9522e24" style="width: 100.0%; height: 100.0%;">84Lumber (Elkins)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_a7a1937c2eb6004a6656d60d2c2a1899.setContent(html_fdb211f5608538f49262bf00b9522e24);
+            
+        
+
+        marker_aa55b262b9e370ac97b6271981f4f4d0.bindPopup(popup_a7a1937c2eb6004a6656d60d2c2a1899)
+        ;
+
+        
+    
+    
+            var marker_02cb2cc605d50cc21e39290c6e710396 = L.marker(
+                [38.34007053850946, -77.49583297005846],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_4180d7a9e8f8c9e7e0af496f900e3828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_02cb2cc605d50cc21e39290c6e710396.setIcon(icon_4180d7a9e8f8c9e7e0af496f900e3828);
+        
+    
+        var popup_2875d4592282267bab4365fc8f333a4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d69ede0ea83a9b4c2571ef517a166696 = $(`<div id="html_d69ede0ea83a9b4c2571ef517a166696" style="width: 100.0%; height: 100.0%;">84Lumber (Fredericksburg)<br>Shipping Days: Mon/Thurs</div>`)[0];
+                popup_2875d4592282267bab4365fc8f333a4d.setContent(html_d69ede0ea83a9b4c2571ef517a166696);
+            
+        
+
+        marker_02cb2cc605d50cc21e39290c6e710396.bindPopup(popup_2875d4592282267bab4365fc8f333a4d)
+        ;
+
+        
+    
+    
+            var marker_d965698e7356ac9d611303ead58590ca = L.marker(
+                [38.9686267741382, -78.18746914986968],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_4ab209256caad2a146d026c8d687d130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d965698e7356ac9d611303ead58590ca.setIcon(icon_4ab209256caad2a146d026c8d687d130);
+        
+    
+        var popup_58baa49d62b1f74dcdade64b7320d8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e612080659459fc5ab8c85e2c11a5b3e = $(`<div id="html_e612080659459fc5ab8c85e2c11a5b3e" style="width: 100.0%; height: 100.0%;">84Lumber (FrontRoyal)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_58baa49d62b1f74dcdade64b7320d8d2.setContent(html_e612080659459fc5ab8c85e2c11a5b3e);
+            
+        
+
+        marker_d965698e7356ac9d611303ead58590ca.bindPopup(popup_58baa49d62b1f74dcdade64b7320d8d2)
+        ;
+
+        
+    
+    
+            var marker_f130b0d854aac06983da2b024c162529 = L.marker(
+                [39.41957991236299, -76.3760699753886],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1587212a28b02fb59007c5901a0c5b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f130b0d854aac06983da2b024c162529.setIcon(icon_1587212a28b02fb59007c5901a0c5b1d);
+        
+    
+        var popup_98cb89a2a00c8b7bd2aad1deec289c00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87b288d82e1961c394104a86aae2271b = $(`<div id="html_87b288d82e1961c394104a86aae2271b" style="width: 100.0%; height: 100.0%;">84Lumber (Joppa)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_98cb89a2a00c8b7bd2aad1deec289c00.setContent(html_87b288d82e1961c394104a86aae2271b);
+            
+        
+
+        marker_f130b0d854aac06983da2b024c162529.bindPopup(popup_98cb89a2a00c8b7bd2aad1deec289c00)
+        ;
+
+        
+    
+    
+            var marker_afd8a04ff5fc394fd209da86dfaa8f5d = L.marker(
+                [39.41780525820809, -79.00013679555009],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_2802a4707d811891300dc841c54e29cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_afd8a04ff5fc394fd209da86dfaa8f5d.setIcon(icon_2802a4707d811891300dc841c54e29cf);
+        
+    
+        var popup_d7cc9abf50f4316531d6e431e7fc591b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03d0914b718989dc064a70e812d90a99 = $(`<div id="html_03d0914b718989dc064a70e812d90a99" style="width: 100.0%; height: 100.0%;">84Lumber (Keyser)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_d7cc9abf50f4316531d6e431e7fc591b.setContent(html_03d0914b718989dc064a70e812d90a99);
+            
+        
+
+        marker_afd8a04ff5fc394fd209da86dfaa8f5d.bindPopup(popup_d7cc9abf50f4316531d6e431e7fc591b)
+        ;
+
+        
+    
+    
+            var marker_ff95666580b59348d56d4e489642d5be = L.marker(
+                [37.78631023958231, -80.45500615384158],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_45485b09b7a993fe0a1cd8a1ac905fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ff95666580b59348d56d4e489642d5be.setIcon(icon_45485b09b7a993fe0a1cd8a1ac905fd9);
+        
+    
+        var popup_544b56412b33db343d060906d6cec47c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_053c9c8c074a26676bb93e9d58e45e47 = $(`<div id="html_053c9c8c074a26676bb93e9d58e45e47" style="width: 100.0%; height: 100.0%;">84Lumber (Lewisburg)<br>Shipping Days: Fridays only</div>`)[0];
+                popup_544b56412b33db343d060906d6cec47c.setContent(html_053c9c8c074a26676bb93e9d58e45e47);
+            
+        
+
+        marker_ff95666580b59348d56d4e489642d5be.bindPopup(popup_544b56412b33db343d060906d6cec47c)
+        ;
+
+        
+    
+    
+            var marker_5c23b6b106445625d7481c37b75823e4 = L.marker(
+                [38.26157444923802, -76.46676802754585],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_81d03d14d84cfd99cc1ee95e7bf6e982 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c23b6b106445625d7481c37b75823e4.setIcon(icon_81d03d14d84cfd99cc1ee95e7bf6e982);
+        
+    
+        var popup_7b3de881c559cedff8e649e1904184c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2bf0d3a0c9f581de4bada1ed4093399 = $(`<div id="html_d2bf0d3a0c9f581de4bada1ed4093399" style="width: 100.0%; height: 100.0%;">84Lumber (LexingtonPark)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_7b3de881c559cedff8e649e1904184c8.setContent(html_d2bf0d3a0c9f581de4bada1ed4093399);
+            
+        
+
+        marker_5c23b6b106445625d7481c37b75823e4.bindPopup(popup_7b3de881c559cedff8e649e1904184c8)
+        ;
+
+        
+    
+    
+            var marker_17049dea58862be8420e8d17b3c782bd = L.marker(
+                [37.45578744854018, -79.11995170739475],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_26b5e33096ba8c9538bc01490c7e14a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_17049dea58862be8420e8d17b3c782bd.setIcon(icon_26b5e33096ba8c9538bc01490c7e14a8);
+        
+    
+        var popup_d990f717a6c096450ab1a79588f169e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b46c5f7e5815e8843d5609e7dd6b8d6 = $(`<div id="html_8b46c5f7e5815e8843d5609e7dd6b8d6" style="width: 100.0%; height: 100.0%;">84Lumber (MadisonHeights)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_d990f717a6c096450ab1a79588f169e2.setContent(html_8b46c5f7e5815e8843d5609e7dd6b8d6);
+            
+        
+
+        marker_17049dea58862be8420e8d17b3c782bd.bindPopup(popup_d990f717a6c096450ab1a79588f169e2)
+        ;
+
+        
+    
+    
+            var marker_e4716f379ec8fd8771f56e0cd00edb4e = L.marker(
+                [38.78570269154272, -77.54353143686613],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c8657ca92cc38a583a28fe4e999d8058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4716f379ec8fd8771f56e0cd00edb4e.setIcon(icon_c8657ca92cc38a583a28fe4e999d8058);
+        
+    
+        var popup_4af7ac573cdc65c1f2684e877b108cee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd63185e707bbee9356ca2aaf320df79 = $(`<div id="html_dd63185e707bbee9356ca2aaf320df79" style="width: 100.0%; height: 100.0%;">84Lumber (Manassas)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_4af7ac573cdc65c1f2684e877b108cee.setContent(html_dd63185e707bbee9356ca2aaf320df79);
+            
+        
+
+        marker_e4716f379ec8fd8771f56e0cd00edb4e.bindPopup(popup_4af7ac573cdc65c1f2684e877b108cee)
+        ;
+
+        
+    
+    
+            var marker_5db508df8021eb4b0456898843886ce8 = L.marker(
+                [39.431423721027215, -77.95431542408431],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_2db2797bb52920053c47f09b5895fe78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5db508df8021eb4b0456898843886ce8.setIcon(icon_2db2797bb52920053c47f09b5895fe78);
+        
+    
+        var popup_4a5bb9ab80c089500fb99939996762bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90704a2a16ad36254feba5a2dbed07d1 = $(`<div id="html_90704a2a16ad36254feba5a2dbed07d1" style="width: 100.0%; height: 100.0%;">84Lumber (Martinsburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_4a5bb9ab80c089500fb99939996762bb.setContent(html_90704a2a16ad36254feba5a2dbed07d1);
+            
+        
+
+        marker_5db508df8021eb4b0456898843886ce8.bindPopup(popup_4a5bb9ab80c089500fb99939996762bb)
+        ;
+
+        
+    
+    
+            var marker_a608bc4014d687909f958532ab7370db = L.marker(
+                [38.47240582793983, -76.77271612404468],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_eb65d043855ff19051e050662f3c38fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a608bc4014d687909f958532ab7370db.setIcon(icon_eb65d043855ff19051e050662f3c38fe);
+        
+    
+        var popup_72c95abc546f6a83d71770147a593878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ec648d7661da0e18b221c02d7b7a735 = $(`<div id="html_5ec648d7661da0e18b221c02d7b7a735" style="width: 100.0%; height: 100.0%;">84Lumber (Mechanicsville)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_72c95abc546f6a83d71770147a593878.setContent(html_5ec648d7661da0e18b221c02d7b7a735);
+            
+        
+
+        marker_a608bc4014d687909f958532ab7370db.bindPopup(popup_72c95abc546f6a83d71770147a593878)
+        ;
+
+        
+    
+    
+            var marker_dc367f960524542e22085bf3b0798307 = L.marker(
+                [39.04665322258965, -78.9811794157686],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_46716f054bbb77a74e0576154fe5637d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dc367f960524542e22085bf3b0798307.setIcon(icon_46716f054bbb77a74e0576154fe5637d);
+        
+    
+        var popup_595a0e18a5229b1e4d055bae13a88337 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a129c7540d9590091c2d9d26d03fae1 = $(`<div id="html_0a129c7540d9590091c2d9d26d03fae1" style="width: 100.0%; height: 100.0%;">84Lumber (Moorefield)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_595a0e18a5229b1e4d055bae13a88337.setContent(html_0a129c7540d9590091c2d9d26d03fae1);
+            
+        
+
+        marker_dc367f960524542e22085bf3b0798307.bindPopup(popup_595a0e18a5229b1e4d055bae13a88337)
+        ;
+
+        
+    
+    
+            var marker_e6b7013ba9b225d9d4e54ca9082acbb7 = L.marker(
+                [39.35646889737027, -77.16953336504189],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_45bf87bcc194a6dabe4a88e7ab4696ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e6b7013ba9b225d9d4e54ca9082acbb7.setIcon(icon_45bf87bcc194a6dabe4a88e7ab4696ee);
+        
+    
+        var popup_6ff8a98437da3cee5a537dc7abf10885 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_438c488a070bb35004719c1aa324d271 = $(`<div id="html_438c488a070bb35004719c1aa324d271" style="width: 100.0%; height: 100.0%;">84Lumber (Mt.Airy)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_6ff8a98437da3cee5a537dc7abf10885.setContent(html_438c488a070bb35004719c1aa324d271);
+            
+        
+
+        marker_e6b7013ba9b225d9d4e54ca9082acbb7.bindPopup(popup_6ff8a98437da3cee5a537dc7abf10885)
+        ;
+
+        
+    
+    
+            var marker_39ccf7d38d9e0595a712f41f6bc54b2d = L.marker(
+                [37.16382202735138, -76.53705280176511],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_dc8e370ec652b3e26837e77d733e3968 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39ccf7d38d9e0595a712f41f6bc54b2d.setIcon(icon_dc8e370ec652b3e26837e77d733e3968);
+        
+    
+        var popup_2b44d913077194b2347a69e8ea262f82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a18aa29266db3ae4de85bd7dd158a3bf = $(`<div id="html_a18aa29266db3ae4de85bd7dd158a3bf" style="width: 100.0%; height: 100.0%;">84Lumber (NewportNews)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_2b44d913077194b2347a69e8ea262f82.setContent(html_a18aa29266db3ae4de85bd7dd158a3bf);
+            
+        
+
+        marker_39ccf7d38d9e0595a712f41f6bc54b2d.bindPopup(popup_2b44d913077194b2347a69e8ea262f82)
+        ;
+
+        
+    
+    
+            var marker_401ee20514bba278fa0a41d20e1394b7 = L.marker(
+                [37.351071091419776, -80.76853076380804],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_ca16bece37b0a05e15c1c8759b4566a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_401ee20514bba278fa0a41d20e1394b7.setIcon(icon_ca16bece37b0a05e15c1c8759b4566a7);
+        
+    
+        var popup_33248df250c7137fceeca0a54358c8df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b76f6bb6468f16a525664416afc99917 = $(`<div id="html_b76f6bb6468f16a525664416afc99917" style="width: 100.0%; height: 100.0%;">84Lumber (Pearisburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_33248df250c7137fceeca0a54358c8df.setContent(html_b76f6bb6468f16a525664416afc99917);
+            
+        
+
+        marker_401ee20514bba278fa0a41d20e1394b7.bindPopup(popup_33248df250c7137fceeca0a54358c8df)
+        ;
+
+        
+    
+    
+            var marker_815d237afc5f069e34d6d9793bc07337 = L.marker(
+                [37.03094263772887, -80.73040302396744],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_7694c7a6c54537d133d13f0fb3adb7b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_815d237afc5f069e34d6d9793bc07337.setIcon(icon_7694c7a6c54537d133d13f0fb3adb7b0);
+        
+    
+        var popup_2c941a1035025a3453c1e12e417f6b2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd86dd2d3ab802e844190956894ddb1e = $(`<div id="html_dd86dd2d3ab802e844190956894ddb1e" style="width: 100.0%; height: 100.0%;">84Lumber (Pulaski)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_2c941a1035025a3453c1e12e417f6b2c.setContent(html_dd86dd2d3ab802e844190956894ddb1e);
+            
+        
+
+        marker_815d237afc5f069e34d6d9793bc07337.bindPopup(popup_2c941a1035025a3453c1e12e417f6b2c)
+        ;
+
+        
+    
+    
+            var marker_d6a5bb999dd1e94dd4578749372a9bc8 = L.marker(
+                [39.31459712352153, -77.85942787734052],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_bcfb6904c7494821d929a3c8870e13b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d6a5bb999dd1e94dd4578749372a9bc8.setIcon(icon_bcfb6904c7494821d929a3c8870e13b3);
+        
+    
+        var popup_c971e58f748ccbb56c0cfbb1c6355952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57e10a54ef11b4b8de3303cd46701dff = $(`<div id="html_57e10a54ef11b4b8de3303cd46701dff" style="width: 100.0%; height: 100.0%;">84Lumber (Ranson)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_c971e58f748ccbb56c0cfbb1c6355952.setContent(html_57e10a54ef11b4b8de3303cd46701dff);
+            
+        
+
+        marker_d6a5bb999dd1e94dd4578749372a9bc8.bindPopup(popup_c971e58f748ccbb56c0cfbb1c6355952)
+        ;
+
+        
+    
+    
+            var marker_3522ef6c77ee631f021f4f7a666b6acb = L.marker(
+                [37.4154787531588, -77.42011212371743],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_57654c7dc4b232c5ca3fdaab583c10f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3522ef6c77ee631f021f4f7a666b6acb.setIcon(icon_57654c7dc4b232c5ca3fdaab583c10f6);
+        
+    
+        var popup_5a9fb23c6d04c69bad6e29c5ef73358d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41d518505292869a8db54936b863497b = $(`<div id="html_41d518505292869a8db54936b863497b" style="width: 100.0%; height: 100.0%;">84Lumber (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_5a9fb23c6d04c69bad6e29c5ef73358d.setContent(html_41d518505292869a8db54936b863497b);
+            
+        
+
+        marker_3522ef6c77ee631f021f4f7a666b6acb.bindPopup(popup_5a9fb23c6d04c69bad6e29c5ef73358d)
+        ;
+
+        
+    
+    
+            var marker_44bbf95118e63e50ea90f4f1e218bd2a = L.marker(
+                [36.82061573010156, -76.47724266816728],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3add11277b4f41fc38ee29f2d9d2470b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44bbf95118e63e50ea90f4f1e218bd2a.setIcon(icon_3add11277b4f41fc38ee29f2d9d2470b);
+        
+    
+        var popup_4b6098560e068dda7c8ddd89235f0db8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3436b71a59f3d14bfa8c64b60c3a7f8a = $(`<div id="html_3436b71a59f3d14bfa8c64b60c3a7f8a" style="width: 100.0%; height: 100.0%;">84Lumber (Suffolk)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_4b6098560e068dda7c8ddd89235f0db8.setContent(html_3436b71a59f3d14bfa8c64b60c3a7f8a);
+            
+        
+
+        marker_44bbf95118e63e50ea90f4f1e218bd2a.bindPopup(popup_4b6098560e068dda7c8ddd89235f0db8)
+        ;
+
+        
+    
+    
+            var marker_5e36d81e627d29681b2d0e29ce21cb58 = L.marker(
+                [39.43880108102371, -76.62958033042067],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_37bc8314d907f7fb09a271ff4ee0a856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e36d81e627d29681b2d0e29ce21cb58.setIcon(icon_37bc8314d907f7fb09a271ff4ee0a856);
+        
+    
+        var popup_f957d7bc12e643b5436ea111cef18b0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2801646745dfdd37ee28074fbd093954 = $(`<div id="html_2801646745dfdd37ee28074fbd093954" style="width: 100.0%; height: 100.0%;">84Lumber (Timonium)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_f957d7bc12e643b5436ea111cef18b0d.setContent(html_2801646745dfdd37ee28074fbd093954);
+            
+        
+
+        marker_5e36d81e627d29681b2d0e29ce21cb58.bindPopup(popup_f957d7bc12e643b5436ea111cef18b0d)
+        ;
+
+        
+    
+    
+            var marker_e142069112cb72687189fe1386d9d861 = L.marker(
+                [38.82336631056909, -76.7381043430017],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c52d642864577b4f9a5152bda28378a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e142069112cb72687189fe1386d9d861.setIcon(icon_c52d642864577b4f9a5152bda28378a1);
+        
+    
+        var popup_4ade183a2ccc7d27e638db158ce0e91e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aade9951fa6572ace174b4669d27e8f = $(`<div id="html_5aade9951fa6572ace174b4669d27e8f" style="width: 100.0%; height: 100.0%;">84Lumber (UpperMarlboro)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_4ade183a2ccc7d27e638db158ce0e91e.setContent(html_5aade9951fa6572ace174b4669d27e8f);
+            
+        
+
+        marker_e142069112cb72687189fe1386d9d861.bindPopup(popup_4ade183a2ccc7d27e638db158ce0e91e)
+        ;
+
+        
+    
+    
+            var marker_1f09a2f117a2e0313dabfb88de5fd4e7 = L.marker(
+                [39.765648569887865, -77.59972019614142],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_86f0b7e14869e467af48a798c1b565ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f09a2f117a2e0313dabfb88de5fd4e7.setIcon(icon_86f0b7e14869e467af48a798c1b565ac);
+        
+    
+        var popup_af447dc6217f46d41218e6de508785b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f80f90a588ea574749ce5e8ee8c0a51e = $(`<div id="html_f80f90a588ea574749ce5e8ee8c0a51e" style="width: 100.0%; height: 100.0%;">84Lumber (Waynesboro)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_af447dc6217f46d41218e6de508785b6.setContent(html_f80f90a588ea574749ce5e8ee8c0a51e);
+            
+        
+
+        marker_1f09a2f117a2e0313dabfb88de5fd4e7.bindPopup(popup_af447dc6217f46d41218e6de508785b6)
+        ;
+
+        
+    
+    
+            var marker_8d7172b31309387ddd23811db6caf74e = L.marker(
+                [39.015854017526365, -76.49067930976297],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_25a428114b7e2ac772122f765afb2cee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d7172b31309387ddd23811db6caf74e.setIcon(icon_25a428114b7e2ac772122f765afb2cee);
+        
+    
+        var popup_0700ebbc34876f1d079703fd718f02df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c38cc385c69e4155c1f5b80e0adad836 = $(`<div id="html_c38cc385c69e4155c1f5b80e0adad836" style="width: 100.0%; height: 100.0%;">ABC (Annapolis)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_0700ebbc34876f1d079703fd718f02df.setContent(html_c38cc385c69e4155c1f5b80e0adad836);
+            
+        
+
+        marker_8d7172b31309387ddd23811db6caf74e.bindPopup(popup_0700ebbc34876f1d079703fd718f02df)
+        ;
+
+        
+    
+    
+            var marker_e88c74498adb8440a5a3485fda9dc1ec = L.marker(
+                [39.180479460257416, -76.52343145149362],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_596e0673b67296050bc4502d36109856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e88c74498adb8440a5a3485fda9dc1ec.setIcon(icon_596e0673b67296050bc4502d36109856);
+        
+    
+        var popup_0d7eed9202b78a10dde8f8b9f7bfb66c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0ae103b11333178ec7341614e1e13de = $(`<div id="html_a0ae103b11333178ec7341614e1e13de" style="width: 100.0%; height: 100.0%;">ABC (Baltimore)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_0d7eed9202b78a10dde8f8b9f7bfb66c.setContent(html_a0ae103b11333178ec7341614e1e13de);
+            
+        
+
+        marker_e88c74498adb8440a5a3485fda9dc1ec.bindPopup(popup_0d7eed9202b78a10dde8f8b9f7bfb66c)
+        ;
+
+        
+    
+    
+            var marker_e96158a7fe6eaf1f4d7d3b841dc56c79 = L.marker(
+                [38.153513671112194, -78.41938789441612],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_ef5ae9da67504b50b7779df551876c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e96158a7fe6eaf1f4d7d3b841dc56c79.setIcon(icon_ef5ae9da67504b50b7779df551876c79);
+        
+    
+        var popup_0ba004dce9601f58ef2ebbd7262bbdf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dfa8d5cf681629a365bf28ba1201210 = $(`<div id="html_8dfa8d5cf681629a365bf28ba1201210" style="width: 100.0%; height: 100.0%;">ABC (Charlottesville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_0ba004dce9601f58ef2ebbd7262bbdf7.setContent(html_8dfa8d5cf681629a365bf28ba1201210);
+            
+        
+
+        marker_e96158a7fe6eaf1f4d7d3b841dc56c79.bindPopup(popup_0ba004dce9601f58ef2ebbd7262bbdf7)
+        ;
+
+        
+    
+    
+            var marker_3ae38712434b8e8dc2ea790fbf047a03 = L.marker(
+                [36.795564299935165, -76.31559405853622],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_5b8949e44300d6ddd43ca9e10998b783 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ae38712434b8e8dc2ea790fbf047a03.setIcon(icon_5b8949e44300d6ddd43ca9e10998b783);
+        
+    
+        var popup_b1c9b712137ae8a86bc96ba9e947c31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f5b05a5b9d189cca77b58aa6dc6194 = $(`<div id="html_c8f5b05a5b9d189cca77b58aa6dc6194" style="width: 100.0%; height: 100.0%;">ABC (Chesapeake)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_b1c9b712137ae8a86bc96ba9e947c31c.setContent(html_c8f5b05a5b9d189cca77b58aa6dc6194);
+            
+        
+
+        marker_3ae38712434b8e8dc2ea790fbf047a03.bindPopup(popup_b1c9b712137ae8a86bc96ba9e947c31c)
+        ;
+
+        
+    
+    
+            var marker_f80d0e4fd522b860c9c47eae6ad2728a = L.marker(
+                [38.91785861658808, -76.90695693754074],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_d095c250d4decceab6b0228fa5369397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f80d0e4fd522b860c9c47eae6ad2728a.setIcon(icon_d095c250d4decceab6b0228fa5369397);
+        
+    
+        var popup_91105ecbcdc6cc060378824a2a5c6624 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_755f57544377c01a718707fc7369a35c = $(`<div id="html_755f57544377c01a718707fc7369a35c" style="width: 100.0%; height: 100.0%;">ABC (Cheverly)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_91105ecbcdc6cc060378824a2a5c6624.setContent(html_755f57544377c01a718707fc7369a35c);
+            
+        
+
+        marker_f80d0e4fd522b860c9c47eae6ad2728a.bindPopup(popup_91105ecbcdc6cc060378824a2a5c6624)
+        ;
+
+        
+    
+    
+            var marker_fdc01a24b36dde83d72ab2c7cc7006df = L.marker(
+                [39.63126404422564, -78.79982857864498],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_23fea011323badf0dfd73e7a0f197959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdc01a24b36dde83d72ab2c7cc7006df.setIcon(icon_23fea011323badf0dfd73e7a0f197959);
+        
+    
+        var popup_c335dc7d151cc05d9f2911225e467221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c32f9486d3afcc9ebaff65b7a81e48ad = $(`<div id="html_c32f9486d3afcc9ebaff65b7a81e48ad" style="width: 100.0%; height: 100.0%;">ABC (Cumberland)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_c335dc7d151cc05d9f2911225e467221.setContent(html_c32f9486d3afcc9ebaff65b7a81e48ad);
+            
+        
+
+        marker_fdc01a24b36dde83d72ab2c7cc7006df.bindPopup(popup_c335dc7d151cc05d9f2911225e467221)
+        ;
+
+        
+    
+    
+            var marker_21c251635a9622917dad9bdc4d23438a = L.marker(
+                [39.36165966133305, -77.42868461345543],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_435bed6e467b08d9f512c75a1a6ee493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21c251635a9622917dad9bdc4d23438a.setIcon(icon_435bed6e467b08d9f512c75a1a6ee493);
+        
+    
+        var popup_8b35b37a99fc9c7afaa028884d75a2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_638187b57c279c1acd33fbada9a15217 = $(`<div id="html_638187b57c279c1acd33fbada9a15217" style="width: 100.0%; height: 100.0%;">ABC (Frederick)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_8b35b37a99fc9c7afaa028884d75a2c7.setContent(html_638187b57c279c1acd33fbada9a15217);
+            
+        
+
+        marker_21c251635a9622917dad9bdc4d23438a.bindPopup(popup_8b35b37a99fc9c7afaa028884d75a2c7)
+        ;
+
+        
+    
+    
+            var marker_2f73dca022df73cb7013a526315f0836 = L.marker(
+                [38.26658731798977, -77.48639856176148],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_03eaf7ba36be8f00b19c71648aaed310 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2f73dca022df73cb7013a526315f0836.setIcon(icon_03eaf7ba36be8f00b19c71648aaed310);
+        
+    
+        var popup_a9f5cf27080075a28f73ba5276aa2c40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_378b845091d282bd3d0adfef6ff1d850 = $(`<div id="html_378b845091d282bd3d0adfef6ff1d850" style="width: 100.0%; height: 100.0%;">ABC (Fredericksburg)<br>Shipping Days: Mon/Thurs</div>`)[0];
+                popup_a9f5cf27080075a28f73ba5276aa2c40.setContent(html_378b845091d282bd3d0adfef6ff1d850);
+            
+        
+
+        marker_2f73dca022df73cb7013a526315f0836.bindPopup(popup_a9f5cf27080075a28f73ba5276aa2c40)
+        ;
+
+        
+    
+    
+            var marker_a7a907294344713e0e2ac07dce4bcfe5 = L.marker(
+                [37.36954038458308, -79.20345657449485],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_fe8839908fbf1b1b36b00faa664b482e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a7a907294344713e0e2ac07dce4bcfe5.setIcon(icon_fe8839908fbf1b1b36b00faa664b482e);
+        
+    
+        var popup_4025cf5abe02250ec838b35441aaed43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f432e9e6cc4cd9827db2de930dcda609 = $(`<div id="html_f432e9e6cc4cd9827db2de930dcda609" style="width: 100.0%; height: 100.0%;">ABC (Lynchburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_4025cf5abe02250ec838b35441aaed43.setContent(html_f432e9e6cc4cd9827db2de930dcda609);
+            
+        
+
+        marker_a7a907294344713e0e2ac07dce4bcfe5.bindPopup(popup_4025cf5abe02250ec838b35441aaed43)
+        ;
+
+        
+    
+    
+            var marker_e592388b066ce9353240c432d2585cb0 = L.marker(
+                [38.78090236555177, -77.5514361090734],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_f5e896318dc262ad4ebdfe3587528a59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e592388b066ce9353240c432d2585cb0.setIcon(icon_f5e896318dc262ad4ebdfe3587528a59);
+        
+    
+        var popup_896274097fcc01b02dbd8157388d19eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d61ad1db3541d5e42b0b4d64807ff206 = $(`<div id="html_d61ad1db3541d5e42b0b4d64807ff206" style="width: 100.0%; height: 100.0%;">ABC (Manassas)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_896274097fcc01b02dbd8157388d19eb.setContent(html_d61ad1db3541d5e42b0b4d64807ff206);
+            
+        
+
+        marker_e592388b066ce9353240c432d2585cb0.bindPopup(popup_896274097fcc01b02dbd8157388d19eb)
+        ;
+
+        
+    
+    
+            var marker_a4717190eb5e655b0bbfc3615e293f6d = L.marker(
+                [37.04198519343053, -76.45924070941511],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_0526f7784f74659018f1e1b6b91ba715 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4717190eb5e655b0bbfc3615e293f6d.setIcon(icon_0526f7784f74659018f1e1b6b91ba715);
+        
+    
+        var popup_6f5d987c8293a6df0854ebc08aa5d6f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333f6331f282ab6253003c7d65ea0caa = $(`<div id="html_333f6331f282ab6253003c7d65ea0caa" style="width: 100.0%; height: 100.0%;">ABC (NewportNews)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_6f5d987c8293a6df0854ebc08aa5d6f8.setContent(html_333f6331f282ab6253003c7d65ea0caa);
+            
+        
+
+        marker_a4717190eb5e655b0bbfc3615e293f6d.bindPopup(popup_6f5d987c8293a6df0854ebc08aa5d6f8)
+        ;
+
+        
+    
+    
+            var marker_171cfa23cec20f506ff1b1c079b34894 = L.marker(
+                [36.85996841279759, -76.23587863135593],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_92c1a8f20d505e7e4efa3315cd5fd71c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_171cfa23cec20f506ff1b1c079b34894.setIcon(icon_92c1a8f20d505e7e4efa3315cd5fd71c);
+        
+    
+        var popup_95d76149675aea52b182fcdc989d516f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7969d531f9935963caa5974917e02689 = $(`<div id="html_7969d531f9935963caa5974917e02689" style="width: 100.0%; height: 100.0%;">ABC (Norfolk)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_95d76149675aea52b182fcdc989d516f.setContent(html_7969d531f9935963caa5974917e02689);
+            
+        
+
+        marker_171cfa23cec20f506ff1b1c079b34894.bindPopup(popup_95d76149675aea52b182fcdc989d516f)
+        ;
+
+        
+    
+    
+            var marker_6395a35053e5902d895cbb59b791421d = L.marker(
+                [37.49427424039173, -77.41485105520388],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_09bfdfaebf8a7f318bb9e68d33c97efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6395a35053e5902d895cbb59b791421d.setIcon(icon_09bfdfaebf8a7f318bb9e68d33c97efc);
+        
+    
+        var popup_3e4fdcb9dc3fed987d356f3ec2e047c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b22d2631f03a2ed68bb58c8de107bafe = $(`<div id="html_b22d2631f03a2ed68bb58c8de107bafe" style="width: 100.0%; height: 100.0%;">ABC (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_3e4fdcb9dc3fed987d356f3ec2e047c1.setContent(html_b22d2631f03a2ed68bb58c8de107bafe);
+            
+        
+
+        marker_6395a35053e5902d895cbb59b791421d.bindPopup(popup_3e4fdcb9dc3fed987d356f3ec2e047c1)
+        ;
+
+        
+    
+    
+            var marker_9aea1f15e577e91612fedb392de4d23e = L.marker(
+                [37.413601174656144, -77.53055081409211],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_e3619eb370b1fbde4f7704dadea5484f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9aea1f15e577e91612fedb392de4d23e.setIcon(icon_e3619eb370b1fbde4f7704dadea5484f);
+        
+    
+        var popup_08a4785d73d5076522714401dbda28d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1ce1b2f2a451f27552bbd207ed1734 = $(`<div id="html_5f1ce1b2f2a451f27552bbd207ed1734" style="width: 100.0%; height: 100.0%;">ABC (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_08a4785d73d5076522714401dbda28d5.setContent(html_5f1ce1b2f2a451f27552bbd207ed1734);
+            
+        
+
+        marker_9aea1f15e577e91612fedb392de4d23e.bindPopup(popup_08a4785d73d5076522714401dbda28d5)
+        ;
+
+        
+    
+    
+            var marker_d09fe16f59243e987cf7bd471776039e = L.marker(
+                [37.28045595574756, -79.97690380440811],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_4f36e8aca62e50ec3fc4ae6fd1c532d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d09fe16f59243e987cf7bd471776039e.setIcon(icon_4f36e8aca62e50ec3fc4ae6fd1c532d1);
+        
+    
+        var popup_579ab6225d46dc0893b8f2c8d0395dbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f7ad659314c799b0634efef022c3e8b = $(`<div id="html_3f7ad659314c799b0634efef022c3e8b" style="width: 100.0%; height: 100.0%;">ABC (Roanoke)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_579ab6225d46dc0893b8f2c8d0395dbf.setContent(html_3f7ad659314c799b0634efef022c3e8b);
+            
+        
+
+        marker_d09fe16f59243e987cf7bd471776039e.bindPopup(popup_579ab6225d46dc0893b8f2c8d0395dbf)
+        ;
+
+        
+    
+    
+            var marker_d722ee8609190b9d99aba26c2d9c909a = L.marker(
+                [39.10369986410559, -77.15363307133931],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_f7331e900435daf486892aeee2132d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d722ee8609190b9d99aba26c2d9c909a.setIcon(icon_f7331e900435daf486892aeee2132d75);
+        
+    
+        var popup_5ed52cac76b28812f565bf0fea9909a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94808d1267e91e8dfcce93ec15c65d13 = $(`<div id="html_94808d1267e91e8dfcce93ec15c65d13" style="width: 100.0%; height: 100.0%;">ABC (Rockville)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_5ed52cac76b28812f565bf0fea9909a4.setContent(html_94808d1267e91e8dfcce93ec15c65d13);
+            
+        
+
+        marker_d722ee8609190b9d99aba26c2d9c909a.bindPopup(popup_5ed52cac76b28812f565bf0fea9909a4)
+        ;
+
+        
+    
+    
+            var marker_609d0e02276959bb0bb14178278ebbe0 = L.marker(
+                [38.794727763999454, -77.17644081552517],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b78e563656a48d974bd82f469fa4b5e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_609d0e02276959bb0bb14178278ebbe0.setIcon(icon_b78e563656a48d974bd82f469fa4b5e4);
+        
+    
+        var popup_03d8fc57bf44e50a8a7147807539d5ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25b1ca1c07f622483905997be2dbe425 = $(`<div id="html_25b1ca1c07f622483905997be2dbe425" style="width: 100.0%; height: 100.0%;">ABC (Springfield)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_03d8fc57bf44e50a8a7147807539d5ce.setContent(html_25b1ca1c07f622483905997be2dbe425);
+            
+        
+
+        marker_609d0e02276959bb0bb14178278ebbe0.bindPopup(popup_03d8fc57bf44e50a8a7147807539d5ce)
+        ;
+
+        
+    
+    
+            var marker_a1affedcaa2be99a8c6ccd8a0a4e9b2d = L.marker(
+                [38.61638986653842, -76.90583529038513],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_13d1a7a42ffb3bd0498318de2fc8fb16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1affedcaa2be99a8c6ccd8a0a4e9b2d.setIcon(icon_13d1a7a42ffb3bd0498318de2fc8fb16);
+        
+    
+        var popup_c04058f58070c810baba1987fa252ee2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5952ac68bd5d781d0d4729b37a74574 = $(`<div id="html_c5952ac68bd5d781d0d4729b37a74574" style="width: 100.0%; height: 100.0%;">ABC (Waldorf)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_c04058f58070c810baba1987fa252ee2.setContent(html_c5952ac68bd5d781d0d4729b37a74574);
+            
+        
+
+        marker_a1affedcaa2be99a8c6ccd8a0a4e9b2d.bindPopup(popup_c04058f58070c810baba1987fa252ee2)
+        ;
+
+        
+    
+    
+            var marker_b3aef5e62f51026f0ebedae4461a738b = L.marker(
+                [38.98068017273105, -76.52262843726957],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_5f97cde6942d408e6016e87e33f80456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3aef5e62f51026f0ebedae4461a738b.setIcon(icon_5f97cde6942d408e6016e87e33f80456);
+        
+    
+        var popup_115a0e1e73266cab984fee2013451065 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a25fce0515af4c8a11e653ff2653485 = $(`<div id="html_4a25fce0515af4c8a11e653ff2653485" style="width: 100.0%; height: 100.0%;">Beacon (Annapolis)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_115a0e1e73266cab984fee2013451065.setContent(html_4a25fce0515af4c8a11e653ff2653485);
+            
+        
+
+        marker_b3aef5e62f51026f0ebedae4461a738b.bindPopup(popup_115a0e1e73266cab984fee2013451065)
+        ;
+
+        
+    
+    
+            var marker_7aa67133394dd24bd2805f942adb5a8a = L.marker(
+                [39.308072673506175, -76.50662853831575],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b4c3bc459d9ecdcca533610ea173c883 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7aa67133394dd24bd2805f942adb5a8a.setIcon(icon_b4c3bc459d9ecdcca533610ea173c883);
+        
+    
+        var popup_1534236d44780748c79f0b052cfd1f2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f8c9fd7ebf23d3c5ba0be4ad7177857 = $(`<div id="html_0f8c9fd7ebf23d3c5ba0be4ad7177857" style="width: 100.0%; height: 100.0%;">Beacon (Baltimore)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_1534236d44780748c79f0b052cfd1f2f.setContent(html_0f8c9fd7ebf23d3c5ba0be4ad7177857);
+            
+        
+
+        marker_7aa67133394dd24bd2805f942adb5a8a.bindPopup(popup_1534236d44780748c79f0b052cfd1f2f)
+        ;
+
+        
+    
+    
+            var marker_1a9cab75de0a6e7ca14eaef8593ee7fe = L.marker(
+                [38.79153730345724, -77.54130381635947],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_9522bd77e21120f9cc325e0b35cca751 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a9cab75de0a6e7ca14eaef8593ee7fe.setIcon(icon_9522bd77e21120f9cc325e0b35cca751);
+        
+    
+        var popup_6dea6b2c7433e599060d4a1605d3d32e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b968ad2458fb2be7a027fa9789e4461 = $(`<div id="html_7b968ad2458fb2be7a027fa9789e4461" style="width: 100.0%; height: 100.0%;">Beacon (Manassas)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_6dea6b2c7433e599060d4a1605d3d32e.setContent(html_7b968ad2458fb2be7a027fa9789e4461);
+            
+        
+
+        marker_1a9cab75de0a6e7ca14eaef8593ee7fe.bindPopup(popup_6dea6b2c7433e599060d4a1605d3d32e)
+        ;
+
+        
+    
+    
+            var marker_63f825a292c8a7170cd4f75550d84219 = L.marker(
+                [38.75885643527268, -77.45634333953097],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_597791da44c243508f659208994b928b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63f825a292c8a7170cd4f75550d84219.setIcon(icon_597791da44c243508f659208994b928b);
+        
+    
+        var popup_51588badef48e1c16a4ee8f41e491f56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d51e771ee0f5ff0274728bdd8fed476 = $(`<div id="html_1d51e771ee0f5ff0274728bdd8fed476" style="width: 100.0%; height: 100.0%;">Beacon (Manassas)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_51588badef48e1c16a4ee8f41e491f56.setContent(html_1d51e771ee0f5ff0274728bdd8fed476);
+            
+        
+
+        marker_63f825a292c8a7170cd4f75550d84219.bindPopup(popup_51588badef48e1c16a4ee8f41e491f56)
+        ;
+
+        
+    
+    
+            var marker_244cb830225d46cbedaf570450ab9132 = L.marker(
+                [37.4730561178666, -77.44575983353667],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_8bed59e8ebf427e01f85214b4c3a220a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_244cb830225d46cbedaf570450ab9132.setIcon(icon_8bed59e8ebf427e01f85214b4c3a220a);
+        
+    
+        var popup_d62e0dc38a9aacfc573fe2bd4199b961 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b936948644cd9145930bbed03fca80a = $(`<div id="html_9b936948644cd9145930bbed03fca80a" style="width: 100.0%; height: 100.0%;">Beacon (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_d62e0dc38a9aacfc573fe2bd4199b961.setContent(html_9b936948644cd9145930bbed03fca80a);
+            
+        
+
+        marker_244cb830225d46cbedaf570450ab9132.bindPopup(popup_d62e0dc38a9aacfc573fe2bd4199b961)
+        ;
+
+        
+    
+    
+            var marker_504004cf2d1264153bce426aee42cbd1 = L.marker(
+                [39.10519379660878, -77.15322053799984],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_60b63ab17a654e43a02304873826858c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_504004cf2d1264153bce426aee42cbd1.setIcon(icon_60b63ab17a654e43a02304873826858c);
+        
+    
+        var popup_e59d29a0e2766302e3037334c095b5ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e565c2ef84636b6d2f129e74d44242 = $(`<div id="html_75e565c2ef84636b6d2f129e74d44242" style="width: 100.0%; height: 100.0%;">Beacon (Rockville)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_e59d29a0e2766302e3037334c095b5ba.setContent(html_75e565c2ef84636b6d2f129e74d44242);
+            
+        
+
+        marker_504004cf2d1264153bce426aee42cbd1.bindPopup(popup_e59d29a0e2766302e3037334c095b5ba)
+        ;
+
+        
+    
+    
+            var marker_e984121c6683d9508c8354293bf18104 = L.marker(
+                [38.59098797043139, -76.94399244297499],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3173f9342295fd90927cb6921ba17674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e984121c6683d9508c8354293bf18104.setIcon(icon_3173f9342295fd90927cb6921ba17674);
+        
+    
+        var popup_4ed0bd47db0f236180249f68c2a182ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a974a93e95a551389353c59f127272 = $(`<div id="html_f0a974a93e95a551389353c59f127272" style="width: 100.0%; height: 100.0%;">Beacon (WhitePlains)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_4ed0bd47db0f236180249f68c2a182ce.setContent(html_f0a974a93e95a551389353c59f127272);
+            
+        
+
+        marker_e984121c6683d9508c8354293bf18104.bindPopup(popup_4ed0bd47db0f236180249f68c2a182ce)
+        ;
+
+        
+    
+    
+            var marker_53f144e12c1b04f863a01f7741d3bd25 = L.marker(
+                [37.252969103180966, -76.76268830724496],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_2dfe3ca65ea35e3948b17db0fa3212b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53f144e12c1b04f863a01f7741d3bd25.setIcon(icon_2dfe3ca65ea35e3948b17db0fa3212b3);
+        
+    
+        var popup_9ee07df29fd732ad0b36ac3acfa4a3ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f286763cc25c15b2c0e2b7769b2e6fc9 = $(`<div id="html_f286763cc25c15b2c0e2b7769b2e6fc9" style="width: 100.0%; height: 100.0%;">Beacon (Williamsburg)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_9ee07df29fd732ad0b36ac3acfa4a3ac.setContent(html_f286763cc25c15b2c0e2b7769b2e6fc9);
+            
+        
+
+        marker_53f144e12c1b04f863a01f7741d3bd25.bindPopup(popup_9ee07df29fd732ad0b36ac3acfa4a3ac)
+        ;
+
+        
+    
+    
+            var marker_d85779cbe1364651b44df4aa1b274a48 = L.marker(
+                [37.62875098337139, -77.5020781590992],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_9515086bb36803a07c114e8ee8ff0071 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d85779cbe1364651b44df4aa1b274a48.setIcon(icon_9515086bb36803a07c114e8ee8ff0071);
+        
+    
+        var popup_e3a3c626db0d67e14d0aa74221020491 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0480bc5547614d0a2d0336e2247a54ea = $(`<div id="html_0480bc5547614d0a2d0336e2247a54ea" style="width: 100.0%; height: 100.0%;">AlsideRevereBuildingProducts (Henrico)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_e3a3c626db0d67e14d0aa74221020491.setContent(html_0480bc5547614d0a2d0336e2247a54ea);
+            
+        
+
+        marker_d85779cbe1364651b44df4aa1b274a48.bindPopup(popup_e3a3c626db0d67e14d0aa74221020491)
+        ;
+
+        
+    
+    
+            var marker_381785272e7a6672d3a3eb2ce87f159f = L.marker(
+                [37.44182896467855, -78.01495426895652],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_00803fe775e4522bb4758e85ad570f4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_381785272e7a6672d3a3eb2ce87f159f.setIcon(icon_00803fe775e4522bb4758e85ad570f4c);
+        
+    
+        var popup_ff582451b40cd3a786cfbe57559802fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbe5c8cfe59833ab14c237febd522db3 = $(`<div id="html_fbe5c8cfe59833ab14c237febd522db3" style="width: 100.0%; height: 100.0%;">AmeliaEquipmentService (Amelia)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_ff582451b40cd3a786cfbe57559802fc.setContent(html_fbe5c8cfe59833ab14c237febd522db3);
+            
+        
+
+        marker_381785272e7a6672d3a3eb2ce87f159f.bindPopup(popup_ff582451b40cd3a786cfbe57559802fc)
+        ;
+
+        
+    
+    
+            var marker_796ca48b27aa652b858378d4651050fb = L.marker(
+                [38.09663236662185, -78.47213343220079],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_179ce23a98983c55805503d60f6bc955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_796ca48b27aa652b858378d4651050fb.setIcon(icon_179ce23a98983c55805503d60f6bc955);
+        
+    
+        var popup_de452369e67a0fd988302605cd681426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94a6e7bf0a18b40378f07d9ea6d41ba4 = $(`<div id="html_94a6e7bf0a18b40378f07d9ea6d41ba4" style="width: 100.0%; height: 100.0%;">BetterLiving (Charlottesville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_de452369e67a0fd988302605cd681426.setContent(html_94a6e7bf0a18b40378f07d9ea6d41ba4);
+            
+        
+
+        marker_796ca48b27aa652b858378d4651050fb.bindPopup(popup_de452369e67a0fd988302605cd681426)
+        ;
+
+        
+    
+    
+            var marker_669f84b57b95b059ea87f676529b3cc8 = L.marker(
+                [37.9698816241644, -78.23318658507627],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_214f8b18f2d9cdc577017fe8c3ff686e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_669f84b57b95b059ea87f676529b3cc8.setIcon(icon_214f8b18f2d9cdc577017fe8c3ff686e);
+        
+    
+        var popup_b2dab6dbce783ffa9e72a71315444288 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1eae422e0146f43ec66c78b7ad35c0ae = $(`<div id="html_1eae422e0146f43ec66c78b7ad35c0ae" style="width: 100.0%; height: 100.0%;">BetterLiving (Troy)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_b2dab6dbce783ffa9e72a71315444288.setContent(html_1eae422e0146f43ec66c78b7ad35c0ae);
+            
+        
+
+        marker_669f84b57b95b059ea87f676529b3cc8.bindPopup(popup_b2dab6dbce783ffa9e72a71315444288)
+        ;
+
+        
+    
+    
+            var marker_dcc92d09f15cb5d35fad9a9461271e18 = L.marker(
+                [39.42184491296865, -78.99240929217085],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_972b491193970bb19d436646c34405b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dcc92d09f15cb5d35fad9a9461271e18.setIcon(icon_972b491193970bb19d436646c34405b2);
+        
+    
+        var popup_485a32ddeef8f67010bfc5ebc8c30c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0329237bcad8b05d3c1682bb60a1b71 = $(`<div id="html_c0329237bcad8b05d3c1682bb60a1b71" style="width: 100.0%; height: 100.0%;">BoggsSupply (Keyser)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_485a32ddeef8f67010bfc5ebc8c30c82.setContent(html_c0329237bcad8b05d3c1682bb60a1b71);
+            
+        
+
+        marker_dcc92d09f15cb5d35fad9a9461271e18.bindPopup(popup_485a32ddeef8f67010bfc5ebc8c30c82)
+        ;
+
+        
+    
+    
+            var marker_8043fb408184adc447201580cf000880 = L.marker(
+                [38.0039497026799, -78.49877671091835],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3ea66e2f0d5f448b1436ad4b9c3dc8af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8043fb408184adc447201580cf000880.setIcon(icon_3ea66e2f0d5f448b1436ad4b9c3dc8af);
+        
+    
+        var popup_3c559aabd64482e59e6249cf173403a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_802c5dec90031c93470289a45f54b424 = $(`<div id="html_802c5dec90031c93470289a45f54b424" style="width: 100.0%; height: 100.0%;">BuildersFirstSource (Charlottesville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_3c559aabd64482e59e6249cf173403a5.setContent(html_802c5dec90031c93470289a45f54b424);
+            
+        
+
+        marker_8043fb408184adc447201580cf000880.bindPopup(popup_3c559aabd64482e59e6249cf173403a5)
+        ;
+
+        
+    
+    
+            var marker_14364a4c8b281f7fbb1a8d6bca29aa1b = L.marker(
+                [37.267006807444666, -80.00418315359731],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_8affce14d143af59dbf8ad8508bfb9bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_14364a4c8b281f7fbb1a8d6bca29aa1b.setIcon(icon_8affce14d143af59dbf8ad8508bfb9bf);
+        
+    
+        var popup_9ed96726262e2e0596d8d936da12aa98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6faf6225b8dfd28e42d632875c59e0 = $(`<div id="html_bb6faf6225b8dfd28e42d632875c59e0" style="width: 100.0%; height: 100.0%;">BuildersFirstSource (Roanoke)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_9ed96726262e2e0596d8d936da12aa98.setContent(html_bb6faf6225b8dfd28e42d632875c59e0);
+            
+        
+
+        marker_14364a4c8b281f7fbb1a8d6bca29aa1b.bindPopup(popup_9ed96726262e2e0596d8d936da12aa98)
+        ;
+
+        
+    
+    
+            var marker_3c7c5e0b533a56f85c87cc7140981600 = L.marker(
+                [37.91461802794654, -76.86011585514572],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_293b772500f13c4f36fd193927efe725 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c7c5e0b533a56f85c87cc7140981600.setIcon(icon_293b772500f13c4f36fd193927efe725);
+        
+    
+        var popup_8b746d4f4ac7f5c1d4387eebe455d5ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be517532f2b21aaccb6aedbab7f50331 = $(`<div id="html_be517532f2b21aaccb6aedbab7f50331" style="width: 100.0%; height: 100.0%;">BuildersFirstSource (Tappahannock)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_8b746d4f4ac7f5c1d4387eebe455d5ed.setContent(html_be517532f2b21aaccb6aedbab7f50331);
+            
+        
+
+        marker_3c7c5e0b533a56f85c87cc7140981600.bindPopup(popup_8b746d4f4ac7f5c1d4387eebe455d5ed)
+        ;
+
+        
+    
+    
+            var marker_5c1ff805625491b61bc2ac8f86f0d21b = L.marker(
+                [38.433391648766126, -76.82557013700752],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1385e86a19b8c5084b5873d28b18d736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c1ff805625491b61bc2ac8f86f0d21b.setIcon(icon_1385e86a19b8c5084b5873d28b18d736);
+        
+    
+        var popup_2efd4b9774856468a86b4816d6914231 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54758af06941fad5df8b7abbbc918b3f = $(`<div id="html_54758af06941fad5df8b7abbbc918b3f" style="width: 100.0%; height: 100.0%;">BrooklineMetalRoofing (Mechanicsville)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_2efd4b9774856468a86b4816d6914231.setContent(html_54758af06941fad5df8b7abbbc918b3f);
+            
+        
+
+        marker_5c1ff805625491b61bc2ac8f86f0d21b.bindPopup(popup_2efd4b9774856468a86b4816d6914231)
+        ;
+
+        
+    
+    
+            var marker_2fed33d2f76283d6aa4e765a5be7588b = L.marker(
+                [37.12343063191836, -79.70725689320172],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_9b459793e457e0a9884f562ab7487938 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2fed33d2f76283d6aa4e765a5be7588b.setIcon(icon_9b459793e457e0a9884f562ab7487938);
+        
+    
+        var popup_22e97ca6aff69fef878e69aee5ea1a12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8b8814741d4281ad96bb5d43f78d4a8 = $(`<div id="html_b8b8814741d4281ad96bb5d43f78d4a8" style="width: 100.0%; height: 100.0%;">CappsHomeBuildingCenter (Moneta)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_22e97ca6aff69fef878e69aee5ea1a12.setContent(html_b8b8814741d4281ad96bb5d43f78d4a8);
+            
+        
+
+        marker_2fed33d2f76283d6aa4e765a5be7588b.bindPopup(popup_22e97ca6aff69fef878e69aee5ea1a12)
+        ;
+
+        
+    
+    
+            var marker_7ca30ad7890e376d7f43d610c9a6d57b = L.marker(
+                [38.072794360487535, -78.47914647373305],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1b95cf9d14004634d1f674490970d632 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7ca30ad7890e376d7f43d610c9a6d57b.setIcon(icon_1b95cf9d14004634d1f674490970d632);
+        
+    
+        var popup_c62d5a4a38150972f21311f4f2a607ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7503eda12374bc4a96851515a2e4a9ae = $(`<div id="html_7503eda12374bc4a96851515a2e4a9ae" style="width: 100.0%; height: 100.0%;">CardinalHomeCenter (Charlottesville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_c62d5a4a38150972f21311f4f2a607ee.setContent(html_7503eda12374bc4a96851515a2e4a9ae);
+            
+        
+
+        marker_7ca30ad7890e376d7f43d610c9a6d57b.bindPopup(popup_c62d5a4a38150972f21311f4f2a607ee)
+        ;
+
+        
+    
+    
+            var marker_6f126a28c233430af8ec0b98b9a355f9 = L.marker(
+                [39.40137279055528, -78.00904945717187],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1112ac32d6ed8e9a6a26ae323204f82a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6f126a28c233430af8ec0b98b9a355f9.setIcon(icon_1112ac32d6ed8e9a6a26ae323204f82a);
+        
+    
+        var popup_c2d0c3b46d822d59fe338133afc040d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6213382a98e028e6ac834d49b9c96d5 = $(`<div id="html_d6213382a98e028e6ac834d49b9c96d5" style="width: 100.0%; height: 100.0%;">CarterLumber (Inwood)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_c2d0c3b46d822d59fe338133afc040d0.setContent(html_d6213382a98e028e6ac834d49b9c96d5);
+            
+        
+
+        marker_6f126a28c233430af8ec0b98b9a355f9.bindPopup(popup_c2d0c3b46d822d59fe338133afc040d0)
+        ;
+
+        
+    
+    
+            var marker_aaf830c874813067dc9c69c55cd3321f = L.marker(
+                [39.16427663534529, -78.17225842525443],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_d0b6ec3636e980b31bd782a96988e13b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aaf830c874813067dc9c69c55cd3321f.setIcon(icon_d0b6ec3636e980b31bd782a96988e13b);
+        
+    
+        var popup_7ca31e4a1fc42904ae2c2a2031f65540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d19da1840d1c5479d7fa4910f29d2fbb = $(`<div id="html_d19da1840d1c5479d7fa4910f29d2fbb" style="width: 100.0%; height: 100.0%;">CarterLumber (Winchester)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_7ca31e4a1fc42904ae2c2a2031f65540.setContent(html_d19da1840d1c5479d7fa4910f29d2fbb);
+            
+        
+
+        marker_aaf830c874813067dc9c69c55cd3321f.bindPopup(popup_7ca31e4a1fc42904ae2c2a2031f65540)
+        ;
+
+        
+    
+    
+            var marker_3efb26f9a70d54070d517bd5cf086e69 = L.marker(
+                [39.00235154991482, -79.13522895937842],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_d57a6ef2d2f5a64fc49e86765b54385f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_3efb26f9a70d54070d517bd5cf086e69.setIcon(icon_d57a6ef2d2f5a64fc49e86765b54385f);
+        
+    
+        var popup_86e88d04a9816d3a664fd21f87398100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_053fdff8c74cb88053a88e4bf0525d49 = $(`<div id="html_053fdff8c74cb88053a88e4bf0525d49" style="width: 100.0%; height: 100.0%;">CentralTie&Lumber (Petersburg)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_86e88d04a9816d3a664fd21f87398100.setContent(html_053fdff8c74cb88053a88e4bf0525d49);
+            
+        
+
+        marker_3efb26f9a70d54070d517bd5cf086e69.bindPopup(popup_86e88d04a9816d3a664fd21f87398100)
+        ;
+
+        
+    
+    
+            var marker_042877cbe112eecd3edf05dbff3c4b7c = L.marker(
+                [39.08786464264968, -78.94352140469319],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_7d7fae227eebbf4982346365b89d64c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_042877cbe112eecd3edf05dbff3c4b7c.setIcon(icon_7d7fae227eebbf4982346365b89d64c4);
+        
+    
+        var popup_1e1e41798da987c559be9ba9ca630419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7b957064fe5148e0259a28e6e7ab4b9 = $(`<div id="html_e7b957064fe5148e0259a28e6e7ab4b9" style="width: 100.0%; height: 100.0%;">CentralTie&Lumber (Moorefield)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_1e1e41798da987c559be9ba9ca630419.setContent(html_e7b957064fe5148e0259a28e6e7ab4b9);
+            
+        
+
+        marker_042877cbe112eecd3edf05dbff3c4b7c.bindPopup(popup_1e1e41798da987c559be9ba9ca630419)
+        ;
+
+        
+    
+    
+            var marker_358b71c92183b161f4e9181ab9e1ce22 = L.marker(
+                [38.4612725419753, -77.99775538451266],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c0ffa91e50872f8c027637fddf24bf3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_358b71c92183b161f4e9181ab9e1ce22.setIcon(icon_c0ffa91e50872f8c027637fddf24bf3a);
+        
+    
+        var popup_0eaa455b2d5b96c3a2475dd51ef740ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85ed30fa818aa6ca2e2a00fd5ee17a97 = $(`<div id="html_85ed30fa818aa6ca2e2a00fd5ee17a97" style="width: 100.0%; height: 100.0%;">CherryStreetBuildingSupply (Culpeper)<br>Shipping Days: Mon/Thurs</div>`)[0];
+                popup_0eaa455b2d5b96c3a2475dd51ef740ac.setContent(html_85ed30fa818aa6ca2e2a00fd5ee17a97);
+            
+        
+
+        marker_358b71c92183b161f4e9181ab9e1ce22.bindPopup(popup_0eaa455b2d5b96c3a2475dd51ef740ac)
+        ;
+
+        
+    
+    
+            var marker_5c22bfd4c8ddf5b5f7ea4b902c2c1e85 = L.marker(
+                [39.55359437321754, -78.26541987047595],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_7612955d63a53973073b8346285d2cae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c22bfd4c8ddf5b5f7ea4b902c2c1e85.setIcon(icon_7612955d63a53973073b8346285d2cae);
+        
+    
+        var popup_4fa0b83caed7ae1c5cdb489e1bde729b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f7231318d23670b71907ba6c04579b7 = $(`<div id="html_4f7231318d23670b71907ba6c04579b7" style="width: 100.0%; height: 100.0%;">DAWSONSHOMECENTER (Berkeley Springs)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_4fa0b83caed7ae1c5cdb489e1bde729b.setContent(html_4f7231318d23670b71907ba6c04579b7);
+            
+        
+
+        marker_5c22bfd4c8ddf5b5f7ea4b902c2c1e85.bindPopup(popup_4fa0b83caed7ae1c5cdb489e1bde729b)
+        ;
+
+        
+    
+    
+            var marker_769088b5253c701efa8f9c136802fc03 = L.marker(
+                [38.3384919287778, -76.56082176872032],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_f162972690cf845ea046a3f36d663300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_769088b5253c701efa8f9c136802fc03.setIcon(icon_f162972690cf845ea046a3f36d663300);
+        
+    
+        var popup_7d77bdeee4ea31900cc56da6660c6af4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_559c01b438469a9690f16da41a3af2d7 = $(`<div id="html_559c01b438469a9690f16da41a3af2d7" style="width: 100.0%; height: 100.0%;">DeanLumber&Supply (Hollywood MD)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_7d77bdeee4ea31900cc56da6660c6af4.setContent(html_559c01b438469a9690f16da41a3af2d7);
+            
+        
+
+        marker_769088b5253c701efa8f9c136802fc03.bindPopup(popup_7d77bdeee4ea31900cc56da6660c6af4)
+        ;
+
+        
+    
+    
+            var marker_fe6daca9dce5455e79972ee959afd0c8 = L.marker(
+                [38.72393936943392, -76.65156200304702],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_e89577606f6f2a017675811aa10ecc9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe6daca9dce5455e79972ee959afd0c8.setIcon(icon_e89577606f6f2a017675811aa10ecc9d);
+        
+    
+        var popup_4ae511728e985a785eb91e3e380b5e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2995a74b0d5dd6c46992137c9571a8f0 = $(`<div id="html_2995a74b0d5dd6c46992137c9571a8f0" style="width: 100.0%; height: 100.0%;">DunkirkSupply (Owings)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_4ae511728e985a785eb91e3e380b5e10.setContent(html_2995a74b0d5dd6c46992137c9571a8f0);
+            
+        
+
+        marker_fe6daca9dce5455e79972ee959afd0c8.bindPopup(popup_4ae511728e985a785eb91e3e380b5e10)
+        ;
+
+        
+    
+    
+            var marker_66d13a1a2584cd246a1fce8589a7becc = L.marker(
+                [38.642621632318296, -79.33165464089217],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_8888681093e9dd7a1856c0e58275fbf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_66d13a1a2584cd246a1fce8589a7becc.setIcon(icon_8888681093e9dd7a1856c0e58275fbf8);
+        
+    
+        var popup_8d75c3025c9edb2a6a5d34e517f02ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cf303ffd18a91fdd5e59cdc021b3807 = $(`<div id="html_7cf303ffd18a91fdd5e59cdc021b3807" style="width: 100.0%; height: 100.0%;">ErnestBowman&Brother (Franklin)<br>Shipping Days: Fridays only</div>`)[0];
+                popup_8d75c3025c9edb2a6a5d34e517f02ef3.setContent(html_7cf303ffd18a91fdd5e59cdc021b3807);
+            
+        
+
+        marker_66d13a1a2584cd246a1fce8589a7becc.bindPopup(popup_8d75c3025c9edb2a6a5d34e517f02ef3)
+        ;
+
+        
+    
+    
+            var marker_98d4daba303c6fc8df23138e00e851dd = L.marker(
+                [39.51132358512448, -78.76883903878979],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b860da7f8c2d59ce4cc3398f41a68d48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_98d4daba303c6fc8df23138e00e851dd.setIcon(icon_b860da7f8c2d59ce4cc3398f41a68d48);
+        
+    
+        var popup_ead3fbb4ada428142c3fef685b079a4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4e6d7711862a854e8cfc1e5755d8a79 = $(`<div id="html_e4e6d7711862a854e8cfc1e5755d8a79" style="width: 100.0%; height: 100.0%;">FortAshbySupply (Fort Ashby)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_ead3fbb4ada428142c3fef685b079a4b.setContent(html_e4e6d7711862a854e8cfc1e5755d8a79);
+            
+        
+
+        marker_98d4daba303c6fc8df23138e00e851dd.bindPopup(popup_ead3fbb4ada428142c3fef685b079a4b)
+        ;
+
+        
+    
+    
+            var marker_2899d4a20e5bdac6251b479b17d65ab9 = L.marker(
+                [39.14432673471646, -78.12848846812854],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1503896020410134680a48a2fc434644 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2899d4a20e5bdac6251b479b17d65ab9.setIcon(icon_1503896020410134680a48a2fc434644);
+        
+    
+        var popup_5b9cd03395eb94923f8d660c317a293a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7a2dad1262d6fd9881198fcaaec8b1b = $(`<div id="html_a7a2dad1262d6fd9881198fcaaec8b1b" style="width: 100.0%; height: 100.0%;">FrogaleLumberSupply (Winchester)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_5b9cd03395eb94923f8d660c317a293a.setContent(html_a7a2dad1262d6fd9881198fcaaec8b1b);
+            
+        
+
+        marker_2899d4a20e5bdac6251b479b17d65ab9.bindPopup(popup_5b9cd03395eb94923f8d660c317a293a)
+        ;
+
+        
+    
+    
+            var marker_71a015c08c70ab63f2fd629e03240f7e = L.marker(
+                [37.23816486833407, -80.41934865651668],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_651e906d70e57fbf8913329932e871b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_71a015c08c70ab63f2fd629e03240f7e.setIcon(icon_651e906d70e57fbf8913329932e871b1);
+        
+    
+        var popup_00f8767ff2bb2c03a818f13772c5de4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99eee91c5b32e78d4c1fabaefe63a333 = $(`<div id="html_99eee91c5b32e78d4c1fabaefe63a333" style="width: 100.0%; height: 100.0%;">HeavenerTrueValue (Blacksburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_00f8767ff2bb2c03a818f13772c5de4c.setContent(html_99eee91c5b32e78d4c1fabaefe63a333);
+            
+        
+
+        marker_71a015c08c70ab63f2fd629e03240f7e.bindPopup(popup_00f8767ff2bb2c03a818f13772c5de4c)
+        ;
+
+        
+    
+    
+            var marker_08e6462ab161ebaafa0922ff65b3cf78 = L.marker(
+                [39.28737580692927, -77.20803315197433],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_d008532b834290545a729077a21bc086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08e6462ab161ebaafa0922ff65b3cf78.setIcon(icon_d008532b834290545a729077a21bc086);
+        
+    
+        var popup_db955b3a9f3d27ac2cff135443752fe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96dd85cf224ea7f76e0d9d4ca4ad1035 = $(`<div id="html_96dd85cf224ea7f76e0d9d4ca4ad1035" style="width: 100.0%; height: 100.0%;">HyattBuildingSupply (Damascus)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_db955b3a9f3d27ac2cff135443752fe3.setContent(html_96dd85cf224ea7f76e0d9d4ca4ad1035);
+            
+        
+
+        marker_08e6462ab161ebaafa0922ff65b3cf78.bindPopup(popup_db955b3a9f3d27ac2cff135443752fe3)
+        ;
+
+        
+    
+    
+            var marker_ce42f584e86a313f5aef7da85e3fce97 = L.marker(
+                [37.35820501671404, -78.82496453350198],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_0fc1bd224d5114e38d3deab9ced33e2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce42f584e86a313f5aef7da85e3fce97.setIcon(icon_0fc1bd224d5114e38d3deab9ced33e2e);
+        
+    
+        var popup_ddeaac48d46124ce2333efbface0dee6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7d14388b82803eeabf0b2885abb22e8 = $(`<div id="html_f7d14388b82803eeabf0b2885abb22e8" style="width: 100.0%; height: 100.0%;">JamersonBuildingSupply (Appomattox)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_ddeaac48d46124ce2333efbface0dee6.setContent(html_f7d14388b82803eeabf0b2885abb22e8);
+            
+        
+
+        marker_ce42f584e86a313f5aef7da85e3fce97.bindPopup(popup_ddeaac48d46124ce2333efbface0dee6)
+        ;
+
+        
+    
+    
+            var marker_a38333c5168a4d9accf7a5f17d5b11c3 = L.marker(
+                [39.31140330141243, -76.95682446780643],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_5fe10fad8b52ae387a1d7e3764752a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a38333c5168a4d9accf7a5f17d5b11c3.setIcon(icon_5fe10fad8b52ae387a1d7e3764752a3a);
+        
+    
+        var popup_605f73eed86d6acfb17546688b46d51f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcca3ac45e7a3b12d6c6ba130d8c1bbf = $(`<div id="html_dcca3ac45e7a3b12d6c6ba130d8c1bbf" style="width: 100.0%; height: 100.0%;">JohnS.Wilson (WestFriendship)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_605f73eed86d6acfb17546688b46d51f.setContent(html_dcca3ac45e7a3b12d6c6ba130d8c1bbf);
+            
+        
+
+        marker_a38333c5168a4d9accf7a5f17d5b11c3.bindPopup(popup_605f73eed86d6acfb17546688b46d51f)
+        ;
+
+        
+    
+    
+            var marker_a8fa6b0374ba50503d9434205656cbd9 = L.marker(
+                [37.71051368041688, -76.37900320551323],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c7224ba900b00c0c80e34c7ffa24148d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a8fa6b0374ba50503d9434205656cbd9.setIcon(icon_c7224ba900b00c0c80e34c7ffa24148d);
+        
+    
+        var popup_3dbf72cca444e3191a4d58c47457dce8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7f5415e468a7a571dab053585668a7 = $(`<div id="html_cb7f5415e468a7a571dab053585668a7" style="width: 100.0%; height: 100.0%;">KelleyConstruction (Fenwick)<br>Shipping Days: Fridays only</div>`)[0];
+                popup_3dbf72cca444e3191a4d58c47457dce8.setContent(html_cb7f5415e468a7a571dab053585668a7);
+            
+        
+
+        marker_a8fa6b0374ba50503d9434205656cbd9.bindPopup(popup_3dbf72cca444e3191a4d58c47457dce8)
+        ;
+
+        
+    
+    
+            var marker_f8fe5c31346fb922a30b08f7f3710329 = L.marker(
+                [36.96062747952654, -78.12543917465652],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_aa9ca206cf427fbd9c1b2f122d13f1a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f8fe5c31346fb922a30b08f7f3710329.setIcon(icon_aa9ca206cf427fbd9c1b2f122d13f1a8);
+        
+    
+        var popup_70e6e819997f9174cd7d560590420e52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fa9bd4bf1485aa0bd5aa212a487c123 = $(`<div id="html_8fa9bd4bf1485aa0bd5aa212a487c123" style="width: 100.0%; height: 100.0%;">KenbridgeSupplyCo (Kenbridge)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_70e6e819997f9174cd7d560590420e52.setContent(html_8fa9bd4bf1485aa0bd5aa212a487c123);
+            
+        
+
+        marker_f8fe5c31346fb922a30b08f7f3710329.bindPopup(popup_70e6e819997f9174cd7d560590420e52)
+        ;
+
+        
+    
+    
+            var marker_6225d6442b21e8aa9be6d7b3f9812f83 = L.marker(
+                [37.13881156491272, -76.51030855236462],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_f4dc823ad36bede253e4c8f76ba34ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6225d6442b21e8aa9be6d7b3f9812f83.setIcon(icon_f4dc823ad36bede253e4c8f76ba34ac1);
+        
+    
+        var popup_57a3c1f6da090e6ff4aa1206eec27000 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9a11b54f70612e0904c1f19124d85aa = $(`<div id="html_c9a11b54f70612e0904c1f19124d85aa" style="width: 100.0%; height: 100.0%;">Lansing (NewportNews)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_57a3c1f6da090e6ff4aa1206eec27000.setContent(html_c9a11b54f70612e0904c1f19124d85aa);
+            
+        
+
+        marker_6225d6442b21e8aa9be6d7b3f9812f83.bindPopup(popup_57a3c1f6da090e6ff4aa1206eec27000)
+        ;
+
+        
+    
+    
+            var marker_d2036e7d4cc86c7854989be3aa6b8e4d = L.marker(
+                [39.92809064442935, -77.73770628628583],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_29ce10eef33f8e3b8dd15ed45a91e284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2036e7d4cc86c7854989be3aa6b8e4d.setIcon(icon_29ce10eef33f8e3b8dd15ed45a91e284);
+        
+    
+        var popup_0c762b57efe11097501122ac88255a8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8378a3e0ada06dd3403ff2fcfda515a2 = $(`<div id="html_8378a3e0ada06dd3403ff2fcfda515a2" style="width: 100.0%; height: 100.0%;">LaurichCompany (Chambersburg)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_0c762b57efe11097501122ac88255a8e.setContent(html_8378a3e0ada06dd3403ff2fcfda515a2);
+            
+        
+
+        marker_d2036e7d4cc86c7854989be3aa6b8e4d.bindPopup(popup_0c762b57efe11097501122ac88255a8e)
+        ;
+
+        
+    
+    
+            var marker_a7182ab80f1b29d97408fde9b7a2a66b = L.marker(
+                [37.34885367900425, -77.36087643185866],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_83e361621427c228baf887d2cdcf2d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a7182ab80f1b29d97408fde9b7a2a66b.setIcon(icon_83e361621427c228baf887d2cdcf2d0e);
+        
+    
+        var popup_1291510930475f896e99f431ed5379eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cea56896aa4192d22a31dae631620092 = $(`<div id="html_cea56896aa4192d22a31dae631620092" style="width: 100.0%; height: 100.0%;">LibertyRoofing (Chester)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_1291510930475f896e99f431ed5379eb.setContent(html_cea56896aa4192d22a31dae631620092);
+            
+        
+
+        marker_a7182ab80f1b29d97408fde9b7a2a66b.bindPopup(popup_1291510930475f896e99f431ed5379eb)
+        ;
+
+        
+    
+    
+            var marker_e5d2b19a0ec0807416b682ca8c66d9ff = L.marker(
+                [37.59099614749208, -77.48407323785591],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b1ea3a91bb8c5a10238f5ea0dca23bae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5d2b19a0ec0807416b682ca8c66d9ff.setIcon(icon_b1ea3a91bb8c5a10238f5ea0dca23bae);
+        
+    
+        var popup_ecb5380b1da3f2f864869489315f3773 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a0491b3f85316fc5168a9b534939f3 = $(`<div id="html_e4a0491b3f85316fc5168a9b534939f3" style="width: 100.0%; height: 100.0%;">MasseyBuildersRichmond (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_ecb5380b1da3f2f864869489315f3773.setContent(html_e4a0491b3f85316fc5168a9b534939f3);
+            
+        
+
+        marker_e5d2b19a0ec0807416b682ca8c66d9ff.bindPopup(popup_ecb5380b1da3f2f864869489315f3773)
+        ;
+
+        
+    
+    
+            var marker_057ad8534998f684d61b36aa7346c259 = L.marker(
+                [37.62145875348135, -76.59075338491034],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_e22294a5621d1f350d9d80cbd3e44383 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_057ad8534998f684d61b36aa7346c259.setIcon(icon_e22294a5621d1f350d9d80cbd3e44383);
+        
+    
+        var popup_d70e575b25234aacae87e3ccfb336b12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee467716d9a30b44095eae98287d962f = $(`<div id="html_ee467716d9a30b44095eae98287d962f" style="width: 100.0%; height: 100.0%;">MasseyBuildersUrbanna (Saluda)<br>Shipping Days: Tuesdays only</div>`)[0];
+                popup_d70e575b25234aacae87e3ccfb336b12.setContent(html_ee467716d9a30b44095eae98287d962f);
+            
+        
+
+        marker_057ad8534998f684d61b36aa7346c259.bindPopup(popup_d70e575b25234aacae87e3ccfb336b12)
+        ;
+
+        
+    
+    
+            var marker_e654db1bbb9246c3b24b1cfddf47aa5e = L.marker(
+                [38.98370463161572, -78.72962724776094],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_55673b33fe49308b1c64116f2c4fae66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e654db1bbb9246c3b24b1cfddf47aa5e.setIcon(icon_55673b33fe49308b1c64116f2c4fae66);
+        
+    
+        var popup_586649a0acd7b05881e9fd1370b383ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cef4bd78f82fe3eead5912e2c84734d = $(`<div id="html_0cef4bd78f82fe3eead5912e2c84734d" style="width: 100.0%; height: 100.0%;">MountainMetals (Lost City)<br>Shipping Days: Wed/Fri</div>`)[0];
+                popup_586649a0acd7b05881e9fd1370b383ee.setContent(html_0cef4bd78f82fe3eead5912e2c84734d);
+            
+        
+
+        marker_e654db1bbb9246c3b24b1cfddf47aa5e.bindPopup(popup_586649a0acd7b05881e9fd1370b383ee)
+        ;
+
+        
+    
+    
+            var marker_4d2726e354411888546ac2e182f3b24f = L.marker(
+                [38.37974988866719, -78.25482925169945],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b38fe7ce3783c197b199f917b7ad9059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d2726e354411888546ac2e182f3b24f.setIcon(icon_b38fe7ce3783c197b199f917b7ad9059);
+        
+    
+        var popup_d0aa6d606e81e8f6f43b9523b659d9c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adabc66972cc06ff693118e4e022e89b = $(`<div id="html_adabc66972cc06ff693118e4e022e89b" style="width: 100.0%; height: 100.0%;">MWPSupply (Madison)<br>Shipping Days: Mon/Thurs</div>`)[0];
+                popup_d0aa6d606e81e8f6f43b9523b659d9c7.setContent(html_adabc66972cc06ff693118e4e022e89b);
+            
+        
+
+        marker_4d2726e354411888546ac2e182f3b24f.bindPopup(popup_d0aa6d606e81e8f6f43b9523b659d9c7)
+        ;
+
+        
+    
+    
+            var marker_af804b0b83d461748f090a099ea8e4e1 = L.marker(
+                [36.92843352535613, -78.93803918114304],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c5330905e0ec6a633428e0bc91a8ff88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_af804b0b83d461748f090a099ea8e4e1.setIcon(icon_c5330905e0ec6a633428e0bc91a8ff88);
+        
+    
+        var popup_5bf1fff9db2af6c394b05c1fdcee974c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08ea3d3ffa859d090b5a37d6d4357cba = $(`<div id="html_08ea3d3ffa859d090b5a37d6d4357cba" style="width: 100.0%; height: 100.0%;">NathalieMetals (Nathalie)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_5bf1fff9db2af6c394b05c1fdcee974c.setContent(html_08ea3d3ffa859d090b5a37d6d4357cba);
+            
+        
+
+        marker_af804b0b83d461748f090a099ea8e4e1.bindPopup(popup_5bf1fff9db2af6c394b05c1fdcee974c)
+        ;
+
+        
+    
+    
+            var marker_5fa11a946dd93f3b88afb63af969ae12 = L.marker(
+                [38.09787929664639, -76.7941636412889],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_085d9e6a8e10cf0b653ed99402bce0ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5fa11a946dd93f3b88afb63af969ae12.setIcon(icon_085d9e6a8e10cf0b653ed99402bce0ab);
+        
+    
+        var popup_0a7111aa4b7e611d0c182513ffaa6a30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c80ce1c6eb8a3e4efa7be683945259 = $(`<div id="html_99c80ce1c6eb8a3e4efa7be683945259" style="width: 100.0%; height: 100.0%;">NorthernNeckBuildingSupply (Montross)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_0a7111aa4b7e611d0c182513ffaa6a30.setContent(html_99c80ce1c6eb8a3e4efa7be683945259);
+            
+        
+
+        marker_5fa11a946dd93f3b88afb63af969ae12.bindPopup(popup_0a7111aa4b7e611d0c182513ffaa6a30)
+        ;
+
+        
+    
+    
+            var marker_cedcd057a0dbb0614ba8be66cd7cc198 = L.marker(
+                [38.65940941897052, -78.49358224921419],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_f94f76893fb3aed481010de365b269ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cedcd057a0dbb0614ba8be66cd7cc198.setIcon(icon_f94f76893fb3aed481010de365b269ab);
+        
+    
+        var popup_e865f9a4974e28adc970e8e09f69a0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c59be4e5c9263f988a872f92d31b89f4 = $(`<div id="html_c59be4e5c9263f988a872f92d31b89f4" style="width: 100.0%; height: 100.0%;">PageCo-OpFarmBureau (Luray)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_e865f9a4974e28adc970e8e09f69a0c8.setContent(html_c59be4e5c9263f988a872f92d31b89f4);
+            
+        
+
+        marker_cedcd057a0dbb0614ba8be66cd7cc198.bindPopup(popup_e865f9a4974e28adc970e8e09f69a0c8)
+        ;
+
+        
+    
+    
+            var marker_cc0a1de042c5a784356eb40c4784e297 = L.marker(
+                [38.71351642342789, -79.25969749475345],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_2e8f3fa1b978b23a2d44c54601ab7d5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cc0a1de042c5a784356eb40c4784e297.setIcon(icon_2e8f3fa1b978b23a2d44c54601ab7d5e);
+        
+    
+        var popup_ade80f44aa18df21fc8282866c89ff6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_359b0a661e6466e25bcd21304cd6564d = $(`<div id="html_359b0a661e6466e25bcd21304cd6564d" style="width: 100.0%; height: 100.0%;">PapsLumber&Rental (Franklin)<br>Shipping Days: Fridays only</div>`)[0];
+                popup_ade80f44aa18df21fc8282866c89ff6c.setContent(html_359b0a661e6466e25bcd21304cd6564d);
+            
+        
+
+        marker_cc0a1de042c5a784356eb40c4784e297.bindPopup(popup_ade80f44aa18df21fc8282866c89ff6c)
+        ;
+
+        
+    
+    
+            var marker_5bae9e9e9e699f9ed3d11e2274877c52 = L.marker(
+                [37.33509260357107, -80.80203954879345],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_b6c7d2b371dba72568e9402a667ee1db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5bae9e9e9e699f9ed3d11e2274877c52.setIcon(icon_b6c7d2b371dba72568e9402a667ee1db);
+        
+    
+        var popup_074d93b23b068371fe02eb2d503448c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a40bd1b81a34ae579864640fe1edb4aa = $(`<div id="html_a40bd1b81a34ae579864640fe1edb4aa" style="width: 100.0%; height: 100.0%;">ReecesBuildingSupply (Narrows)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_074d93b23b068371fe02eb2d503448c4.setContent(html_a40bd1b81a34ae579864640fe1edb4aa);
+            
+        
+
+        marker_5bae9e9e9e699f9ed3d11e2274877c52.bindPopup(popup_074d93b23b068371fe02eb2d503448c4)
+        ;
+
+        
+    
+    
+            var marker_99adc6203e81c206d8440996442e1324 = L.marker(
+                [37.553502685590885, -77.89747500011806],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_cc76983a62f2fbba15bc42ee8c8fa52e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_99adc6203e81c206d8440996442e1324.setIcon(icon_cc76983a62f2fbba15bc42ee8c8fa52e);
+        
+    
+        var popup_d2f4310e17d653f93d06ce880ebcd7ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76ad1f8fa0741aa83e11d1a63a486b24 = $(`<div id="html_76ad1f8fa0741aa83e11d1a63a486b24" style="width: 100.0%; height: 100.0%;">R.C.Goodwyn&Sons (Powhatan)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_d2f4310e17d653f93d06ce880ebcd7ae.setContent(html_76ad1f8fa0741aa83e11d1a63a486b24);
+            
+        
+
+        marker_99adc6203e81c206d8440996442e1324.bindPopup(popup_d2f4310e17d653f93d06ce880ebcd7ae)
+        ;
+
+        
+    
+    
+            var marker_cc9dbd6bb7494fe05a3c7a67c81deba7 = L.marker(
+                [37.335075541612014, -80.80200736277725],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_051286d0feccb65174b53a4afb2f6c53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cc9dbd6bb7494fe05a3c7a67c81deba7.setIcon(icon_051286d0feccb65174b53a4afb2f6c53);
+        
+    
+        var popup_d53b10bb52886b03dae439fa45e503c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad3105c99b801b9005338369924913a3 = $(`<div id="html_ad3105c99b801b9005338369924913a3" style="width: 100.0%; height: 100.0%;">RagsdalesBuildingSupply (Petersburg)<br>Shipping Days: Mon/Thur</div>`)[0];
+                popup_d53b10bb52886b03dae439fa45e503c5.setContent(html_ad3105c99b801b9005338369924913a3);
+            
+        
+
+        marker_cc9dbd6bb7494fe05a3c7a67c81deba7.bindPopup(popup_d53b10bb52886b03dae439fa45e503c5)
+        ;
+
+        
+    
+    
+            var marker_241971e421f29c7b45ebcf1318e6a9eb = L.marker(
+                [37.30024427913028, -80.03107016923394],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3a01f177a92da1054325392a1975e5f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_241971e421f29c7b45ebcf1318e6a9eb.setIcon(icon_3a01f177a92da1054325392a1975e5f9);
+        
+    
+        var popup_42c6659abe3c088d5a2b5a8db75ff150 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c2c6d8edab4483b05c0c9e9bd5b5662 = $(`<div id="html_2c2c6d8edab4483b05c0c9e9bd5b5662" style="width: 100.0%; height: 100.0%;">SalemBuildingSupply (Salem)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_42c6659abe3c088d5a2b5a8db75ff150.setContent(html_2c2c6d8edab4483b05c0c9e9bd5b5662);
+            
+        
+
+        marker_241971e421f29c7b45ebcf1318e6a9eb.bindPopup(popup_42c6659abe3c088d5a2b5a8db75ff150)
+        ;
+
+        
+    
+    
+            var marker_85ce599224a185e54a7a38a29a41aedc = L.marker(
+                [37.11922152049747, -79.71576543460556],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_891590c20e72dc9eb75210ef694d3daa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_85ce599224a185e54a7a38a29a41aedc.setIcon(icon_891590c20e72dc9eb75210ef694d3daa);
+        
+    
+        var popup_a781d64c3e0e45cb92ed691094590a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90488dc2d6d043ef864d435292f7da1b = $(`<div id="html_90488dc2d6d043ef864d435292f7da1b" style="width: 100.0%; height: 100.0%;">SmithMountainBuildingSupply (Hardy)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_a781d64c3e0e45cb92ed691094590a62.setContent(html_90488dc2d6d043ef864d435292f7da1b);
+            
+        
+
+        marker_85ce599224a185e54a7a38a29a41aedc.bindPopup(popup_a781d64c3e0e45cb92ed691094590a62)
+        ;
+
+        
+    
+    
+            var marker_74edc1ae9647bebae070dc57e15980a8 = L.marker(
+                [38.99141199017937, -76.55069787696684],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_d4acdd52315e504f30c4c778728ccfbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74edc1ae9647bebae070dc57e15980a8.setIcon(icon_d4acdd52315e504f30c4c778728ccfbf);
+        
+    
+        var popup_b298cf11ef363fe80f5a72f9073ebbca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ace6f33d3bed83504c1ad93682ba945 = $(`<div id="html_9ace6f33d3bed83504c1ad93682ba945" style="width: 100.0%; height: 100.0%;">SuperiorDistr. (Annapolis)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_b298cf11ef363fe80f5a72f9073ebbca.setContent(html_9ace6f33d3bed83504c1ad93682ba945);
+            
+        
+
+        marker_74edc1ae9647bebae070dc57e15980a8.bindPopup(popup_b298cf11ef363fe80f5a72f9073ebbca)
+        ;
+
+        
+    
+    
+            var marker_14dee571c75b9cd68e2dd25f66cc1670 = L.marker(
+                [39.02508700555606, -76.91115339200812],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_1e4ced283011884e9f73b4615b6a608e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14dee571c75b9cd68e2dd25f66cc1670.setIcon(icon_1e4ced283011884e9f73b4615b6a608e);
+        
+    
+        var popup_e62848b938d435387d59b419cb8a0e77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92f84d1a46fd56cc9fd46eb2a682f3ba = $(`<div id="html_92f84d1a46fd56cc9fd46eb2a682f3ba" style="width: 100.0%; height: 100.0%;">SuperiorDistribution (Beltsville)<br>Shipping Days: Mondays only</div>`)[0];
+                popup_e62848b938d435387d59b419cb8a0e77.setContent(html_92f84d1a46fd56cc9fd46eb2a682f3ba);
+            
+        
+
+        marker_14dee571c75b9cd68e2dd25f66cc1670.bindPopup(popup_e62848b938d435387d59b419cb8a0e77)
+        ;
+
+        
+    
+    
+            var marker_d8827eb7679b7a5aa374697215e23731 = L.marker(
+                [37.60816959388721, -77.4810381173746],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_18650c225cf220b3347d82e66a90e0d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8827eb7679b7a5aa374697215e23731.setIcon(icon_18650c225cf220b3347d82e66a90e0d7);
+        
+    
+        var popup_ac9f71995252c15f99e68d538b88bb6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87e7fb77c91da305cc8c24bd64c0689d = $(`<div id="html_87e7fb77c91da305cc8c24bd64c0689d" style="width: 100.0%; height: 100.0%;">SuperiorDistr. (Richmond)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_ac9f71995252c15f99e68d538b88bb6f.setContent(html_87e7fb77c91da305cc8c24bd64c0689d);
+            
+        
+
+        marker_d8827eb7679b7a5aa374697215e23731.bindPopup(popup_ac9f71995252c15f99e68d538b88bb6f)
+        ;
+
+        
+    
+    
+            var marker_d4456359f396af6d37047525208f856d = L.marker(
+                [37.28102734860612, -79.92402201016927],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_0ef17baaaddd4ffcc01c2889e7530a70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4456359f396af6d37047525208f856d.setIcon(icon_0ef17baaaddd4ffcc01c2889e7530a70);
+        
+    
+        var popup_075419286b6a84d09656c786766e0f49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dfed23f1566c66e9c93b1ab26f47b7f = $(`<div id="html_4dfed23f1566c66e9c93b1ab26f47b7f" style="width: 100.0%; height: 100.0%;">SuperiorDistr. (Roanoke)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_075419286b6a84d09656c786766e0f49.setContent(html_4dfed23f1566c66e9c93b1ab26f47b7f);
+            
+        
+
+        marker_d4456359f396af6d37047525208f856d.bindPopup(popup_075419286b6a84d09656c786766e0f49)
+        ;
+
+        
+    
+    
+            var marker_dfdf0e6386738e629abe7f45a87e7d1d = L.marker(
+                [37.37593995792243, -79.22246723955578],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_dc7d0660fd5f2e44d0882b063f44ff64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dfdf0e6386738e629abe7f45a87e7d1d.setIcon(icon_dc7d0660fd5f2e44d0882b063f44ff64);
+        
+    
+        var popup_7f2fa58e473ff8b6c0d4346b6b795607 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e331c36dcaaeaeb963f7851eefc4a91 = $(`<div id="html_8e331c36dcaaeaeb963f7851eefc4a91" style="width: 100.0%; height: 100.0%;">TaylorBrothers (Lynchburg)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_7f2fa58e473ff8b6c0d4346b6b795607.setContent(html_8e331c36dcaaeaeb963f7851eefc4a91);
+            
+        
+
+        marker_dfdf0e6386738e629abe7f45a87e7d1d.bindPopup(popup_7f2fa58e473ff8b6c0d4346b6b795607)
+        ;
+
+        
+    
+    
+            var marker_6da851171f91007976b018bfa526284d = L.marker(
+                [39.17327245142079, -76.84558950270709],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3b749fae27687f1f5a62b1dcaa58579c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6da851171f91007976b018bfa526284d.setIcon(icon_3b749fae27687f1f5a62b1dcaa58579c);
+        
+    
+        var popup_75866c5003d9478f3531c13d12fef726 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b98379db76007ee3db4ba3d5fa541bce = $(`<div id="html_b98379db76007ee3db4ba3d5fa541bce" style="width: 100.0%; height: 100.0%;">UniversalSupply (Columbia)<br>Shipping Days: Wednesdays only</div>`)[0];
+                popup_75866c5003d9478f3531c13d12fef726.setContent(html_b98379db76007ee3db4ba3d5fa541bce);
+            
+        
+
+        marker_6da851171f91007976b018bfa526284d.bindPopup(popup_75866c5003d9478f3531c13d12fef726)
+        ;
+
+        
+    
+    
+            var marker_de912de061c1ff68f17df12622fcc81d = L.marker(
+                [37.16550788053335, -78.11920143926078],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_3bba82d2419f17c7acde1292c1c99f55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de912de061c1ff68f17df12622fcc81d.setIcon(icon_3bba82d2419f17c7acde1292c1c99f55);
+        
+    
+        var popup_74e5a18c20a348d94e775522137cc1d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_112cbf0a8655ae324f297aa642cce0e9 = $(`<div id="html_112cbf0a8655ae324f297aa642cce0e9" style="width: 100.0%; height: 100.0%;">VirginiaCarolinaBuildings (Crewe)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_74e5a18c20a348d94e775522137cc1d5.setContent(html_112cbf0a8655ae324f297aa642cce0e9);
+            
+        
+
+        marker_de912de061c1ff68f17df12622fcc81d.bindPopup(popup_74e5a18c20a348d94e775522137cc1d5)
+        ;
+
+        
+    
+    
+            var marker_77bd778d39802efea2281effb2c19d30 = L.marker(
+                [38.08637435687165, -78.99569477190794],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_872b3f7f1c6ba6e6cf320c10e2e44598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_77bd778d39802efea2281effb2c19d30.setIcon(icon_872b3f7f1c6ba6e6cf320c10e2e44598);
+        
+    
+        var popup_ad88e21650fe88018987cc870de53181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_344e3e7f86cdfddd9c1b5a2b31e32e4d = $(`<div id="html_344e3e7f86cdfddd9c1b5a2b31e32e4d" style="width: 100.0%; height: 100.0%;">VirginiaFrameBuilders (Fishersville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_ad88e21650fe88018987cc870de53181.setContent(html_344e3e7f86cdfddd9c1b5a2b31e32e4d);
+            
+        
+
+        marker_77bd778d39802efea2281effb2c19d30.bindPopup(popup_ad88e21650fe88018987cc870de53181)
+        ;
+
+        
+    
+    
+            var marker_31ada4a51f2a7d9b0c500d68cf824da1 = L.marker(
+                [37.8076123111186, -78.50350218552947],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c75e8c91254378059549c62ef6cbc410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_31ada4a51f2a7d9b0c500d68cf824da1.setIcon(icon_c75e8c91254378059549c62ef6cbc410);
+        
+    
+        var popup_3c39d8f9a89b80f84dc6792333fb6f91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07cf5d99871a88f2729f41e38eadf53f = $(`<div id="html_07cf5d99871a88f2729f41e38eadf53f" style="width: 100.0%; height: 100.0%;">W.F.Paulett&Sons (Scottsville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_3c39d8f9a89b80f84dc6792333fb6f91.setContent(html_07cf5d99871a88f2729f41e38eadf53f);
+            
+        
+
+        marker_31ada4a51f2a7d9b0c500d68cf824da1.bindPopup(popup_3c39d8f9a89b80f84dc6792333fb6f91)
+        ;
+
+        
+    
+    
+            var marker_9c18307e93e705215f6e7467faaa51c3 = L.marker(
+                [37.04263501979775, -78.48246536262697],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_c8773ebd686126bb1575d184617d7283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9c18307e93e705215f6e7467faaa51c3.setIcon(icon_c8773ebd686126bb1575d184617d7283);
+        
+    
+        var popup_a125caf6fbecdede1858ef239254fa3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b658d02a8bab100741232c3b100ed99 = $(`<div id="html_1b658d02a8bab100741232c3b100ed99" style="width: 100.0%; height: 100.0%;">WhitesBuildingCenter (Keysville)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_a125caf6fbecdede1858ef239254fa3c.setContent(html_1b658d02a8bab100741232c3b100ed99);
+            
+        
+
+        marker_9c18307e93e705215f6e7467faaa51c3.bindPopup(popup_a125caf6fbecdede1858ef239254fa3c)
+        ;
+
+        
+    
+    
+            var marker_970056e0ce6f3b111978c47b65752fca = L.marker(
+                [37.29424151069446, -79.92850558990276],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_09905de2da4e4c85866475feb738b957 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_970056e0ce6f3b111978c47b65752fca.setIcon(icon_09905de2da4e4c85866475feb738b957);
+        
+    
+        var popup_8c9a74d62f8091c058d40fb2a6d6fe26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8a3ea0b37d3561b6a832faad09d72dd = $(`<div id="html_b8a3ea0b37d3561b6a832faad09d72dd" style="width: 100.0%; height: 100.0%;">WholesaleSidingSupply (Roanoke)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_8c9a74d62f8091c058d40fb2a6d6fe26.setContent(html_b8a3ea0b37d3561b6a832faad09d72dd);
+            
+        
+
+        marker_970056e0ce6f3b111978c47b65752fca.bindPopup(popup_8c9a74d62f8091c058d40fb2a6d6fe26)
+        ;
+
+        
+    
+    
+            var marker_84ec7e7891b518c3d1947cb4227b570b = L.marker(
+                [37.07658077067607, -78.94234636116917],
+                {}
+            ).addTo(map_38f479546713a98f029cc055ca53400a);
+        
+    
+            var icon_48c2522865cc00a6c35f540f55c8b2f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_84ec7e7891b518c3d1947cb4227b570b.setIcon(icon_48c2522865cc00a6c35f540f55c8b2f8);
+        
+    
+        var popup_7742d72acb81df89d4dc6a01c17cc4de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfceb1c9075c87ccfc3fb03f13562f4e = $(`<div id="html_dfceb1c9075c87ccfc3fb03f13562f4e" style="width: 100.0%; height: 100.0%;">WilliamsLumber (Brookneal)<br>Shipping Days: Tues/Thurs</div>`)[0];
+                popup_7742d72acb81df89d4dc6a01c17cc4de.setContent(html_dfceb1c9075c87ccfc3fb03f13562f4e);
+            
+        
+
+        marker_84ec7e7891b518c3d1947cb4227b570b.bindPopup(popup_7742d72acb81df89d4dc6a01c17cc4de)
+        ;
+
+        
+    
+</script>
+</html>

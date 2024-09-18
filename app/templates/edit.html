@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Dealers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], select {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: calc(100% - 22px);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .back-button {
+            margin-bottom: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .scroll-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+        }
+
+        .dealer-entry {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+            .dealer-entry label {
+                margin-left: 10px;
+            }
+    </style>
+    <script>
+        function populateForm(dealer) {
+            document.getElementById("original-name").value = dealer.name;
+            document.getElementById("dealer-name").value = dealer.name;
+            document.getElementById("dealer-city").value = dealer.city;
+            document.getElementById("dealer-coordinates").value = dealer.coordinates;
+            document.getElementById("dealer-shipping-days").value = dealer.shipping_days;
+        }
+
+        function selectDealer(dealerName, dealerCity, dealerCoordinates, dealerShippingDays) {
+            const dealer = {
+                name: dealerName,
+                city: dealerCity,
+                coordinates: dealerCoordinates,
+                shipping_days: dealerShippingDays
+            };
+            populateForm(dealer);
+        }
+    </script>
+</head>
+<body>
+
+    <a href="/" class="back-button">Back</a>
+
+    <h1>Edit Dealers</h1>
+
+    <form method="POST" action="/add_edit_dealer">
+        <input type="hidden" id="original-name" name="original_name">
+        <input type="text" id="dealer-name" name="name" placeholder="Dealer Name" required>
+        <input type="text" id="dealer-city" name="city" placeholder="City Name" required>
+        <input type="text" id="dealer-coordinates" name="coordinates" placeholder="Coordinates (latitude,longitude) :: 1) Right-click on location in Google Maps. 2) Click on coordinates. 3) Paste value here." required>
+        <select id="dealer-shipping-days" name="shipping_days" required>
+            <option value="Mondays only">Mondays only</option>
+            <option value="Tues/Thurs">Tues/Thurs</option>
+            <option value="Mon/Wed">Mon/Wed</option>
+            <option value="Mon/Thur">Mon/Thur</option>
+            <option value="Wednesdays only">Wednesdays only</option>
+            <option value="Wed/Fri">Wed/Fri</option>
+        </select>
+        <button type="submit">Add/Edit Dealer</button>
+    </form>
+
+    <form method="POST" action="/delete_dealer">
+        <div class="scroll-box">
+            {% for dealer in dealers %}
+            <div class="dealer-entry">
+                <input type="radio" name="delete" value="{{ dealer.name }}|{{ dealer.city }}|{{ dealer.coordinates|join(',') }}|{{ dealer.shipping_days }}" onclick="selectDealer('{{ dealer.name }}', '{{ dealer.city }}', '{{ dealer.coordinates|join(',') }}', '{{ dealer.shipping_days }}')">
+                <label>{{ dealer.name }} - {{ dealer.city }} - {{ dealer.coordinates }} - {{ dealer.shipping_days }}</label>
+            </div>
+            {% endfor %}
+        </div>
+        <button type="submit">Delete Selected</button>
+    </form>
+
+
+
+</body>
+</html>
